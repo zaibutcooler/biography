@@ -1,0 +1,6 @@
+
+
+
+<!-- Navbar -->
+<slot />
+<!-- Footer -->
