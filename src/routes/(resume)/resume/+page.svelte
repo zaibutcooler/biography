@@ -1,7 +1,14 @@
-<div>Hello</div>
+<script>
+  import { Button } from '$lib/components/ui/button';
+  import { GlobeIcon, MailIcon, PhoneIcon } from 'lucide-svelte';
+  import { RESUME_DATA } from './resume-data';
 
 
-<!-- <main class="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
+</script>
+
+
+
+<main class="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
     <section class="mx-auto w-full max-w-3xl space-y-8 bg-white print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
@@ -20,21 +27,23 @@
             </a>
           </p>
           <div class="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
-            {RESUME_DATA.contact.email ? (
+            {#if RESUME_DATA.contact.email}  
               <a href={`mailto:${RESUME_DATA.contact.email}`}>
                 <Button class="h-8 w-8" variant="outline" size="icon">
                   <MailIcon class="h-4 w-4" />
                 </Button>
               </a>
-            ) : null}
-            {RESUME_DATA.contact.tel ? (
+            {/if}
+            {#if RESUME_DATA.contact.tel }
               <a href={`tel:${RESUME_DATA.contact.tel}`}>
                 <Button class="h-8 w-8" variant="outline" size="icon">
                   <PhoneIcon class="h-4 w-4" />
                 </Button>
               </a>
-            ) : null}
-            {RESUME_DATA.contact.social.map((social) => (
+              {/if}
+
+            {#each RESUME_DATA.contact.social as social} 
+
               <Button
                 key={social.name}
                 class="h-8 w-8"
@@ -45,19 +54,21 @@
                   <social.icon class="h-4 w-4" />
                 </a>
               </Button>
-            ))}
+              {/each}
+
+
           </div>
           <div class="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
-            {RESUME_DATA.contact.email ? (
+            {#if RESUME_DATA.contact.email}
               <a href={`mailto:${RESUME_DATA.contact.email}`}>
                 <span class="underline">{RESUME_DATA.contact.email}</span>
               </a>
-            ) : null}
-            {RESUME_DATA.contact.tel ? (
+            {/if}
+            {#if RESUME_DATA.contact.tel }
               <a href={`tel:${RESUME_DATA.contact.tel}`}>
                 <span class="underline">{RESUME_DATA.contact.tel}</span>
               </a>
-            ) : null}
+            {/if}
           </div>
         </div>
 
@@ -66,16 +77,16 @@
           <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
         </Avatar>
       </div>
-      <Section>
+      <section>
         <h2 class="text-xl font-bold">About</h2>
         <p class="text-pretty font-mono text-sm text-muted-foreground">
           {RESUME_DATA.summary}
         </p>
-      </Section>
-      <Section>
+      </section>
+      <section>
         <h2 class="text-xl font-bold">Work Experience</h2>
-        {RESUME_DATA.work.map((work) => {
-          return (
+        {#each RESUME_DATA.work as work}
+
             <Card key={work.company}>
               <CardHeader>
                 <div class="flex items-center justify-between gap-x-2 text-base">
@@ -85,7 +96,7 @@
                     </a>
 
                     <span class="inline-flex gap-x-1">
-                      {work.badges.map((badge) => (
+                      {#each work.badges as badge}
                         <Badge
                           variant="secondary"
                           class="align-middle text-xs"
@@ -93,7 +104,7 @@
                         >
                           {badge}
                         </Badge>
-                      ))}
+                      {/each}
                     </span>
                   </h3>
                   <div class="text-sm tabular-nums text-gray-500">
@@ -109,15 +120,13 @@
                 {work.description}
               </CardContent>
             </Card>
-          )
-        })}
-      </Section>
+{/each}
+      </section>
 
-      <Section class="print-force-new-page scroll-mb-16">
+      <section class="print-force-new-page scroll-mb-16">
         <h2 class="text-xl font-bold">Projects</h2>
         <div class="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-1 print:gap-2 md:grid-cols-1 lg:grid-cols-1">
-          {RESUME_DATA.projects.map((project) => {
-            return (
+          {#each RESUME_DATA.projects as project}
               <ProjectCard
                 key={project.title}
                 title={project.title}
@@ -125,15 +134,13 @@
                 tags={project.techStack}
                 link={"link" in project ? project.link.href : undefined}
               />
-            )
-          })}
+            {/each}
         </div>
-      </Section>
-      <Section class="print-force-new-page scroll-mb-16">
+      </section>
+      <section class="print-force-new-page scroll-mb-16">
         <h2 class="text-xl font-bold">Clients</h2>
         <div class="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-          {RESUME_DATA.clients.map((project) => {
-            return (
+          {#each RESUME_DATA.clients as project}
               <ProjectCard
                 key={project.title}
                 title={project.title}
@@ -141,14 +148,13 @@
                 tags={project.techStack}
                 link={"link" in project ? project.link.href : undefined}
               />
-            )
-          })}
+            {/each}
         </div>
-      </Section>
-      <Section>
+      </section>
+      <section>
         <h2 class="text-xl font-bold">Education</h2>
-        {RESUME_DATA.education.map((education) => {
-          return (
+        {#each RESUME_DATA.education as education}
+          
             <Card key={education.school}>
               <CardHeader>
                 <div class="flex items-center justify-between gap-x-2 text-base">
@@ -162,20 +168,19 @@
               </CardHeader>
               <CardContent class="mt-2">{education.degree}</CardContent>
             </Card>
-          )
-        })}
-      </Section>
-      <Section>
+          {/each}
+      </section>
+      <section>
         <h2 class="text-xl font-bold">Skills</h2>
         <div class="flex flex-wrap gap-1">
-          {RESUME_DATA.skills.map((skill) => {
-            return <Badge key={skill}>{skill}</Badge>
-          })}
+          {#each RESUME_DATA.skills as skill}
+            <Badge key={skill}>{skill}</Badge>
+          {/each}
         </div>
-      </Section>
+      </section>
     </section>
 
-    <CommandMenu
+    <!-- <CommandMenu
       links={[
         {
           url: RESUME_DATA.personalWebsiteUrl,
@@ -186,5 +191,15 @@
           title: socilaMediaLink.name,
         })),
       ]}
-    />
-  </main> -->
+    /> -->
+  </main>
+
+
+
+
+
+
+
+
+
+  

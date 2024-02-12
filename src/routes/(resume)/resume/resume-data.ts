@@ -6,10 +6,8 @@ import {
   projects,
   skills,
   works,
-} from "@/config/profileConfig"
-import { GitHubIcon } from "@/components/resume/icons/GitHubIcon"
-import { LinkedInIcon } from "@/components/resume/icons/LinkedInIcon"
-import { XIcon } from "@/components/resume/icons/XIcon"
+} from '$lib/config/profileConfig'
+
 
 export const RESUME_DATA = {
   name: profile.fullName,
