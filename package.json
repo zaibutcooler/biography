@@ -43,6 +43,7 @@
 	"dependencies": {
 		"bits-ui": "^0.14.0",
 		"clsx": "^2.1.0",
+		"cmdk-sv": "^0.0.13",
 		"embla-carousel-svelte": "8.0.0-rc19",
 		"formsnap": "^0.4.2",
 		"lucide-svelte": "^0.312.0",

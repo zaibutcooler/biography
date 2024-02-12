@@ -1,6 +1,3 @@
-
-
-
 <!-- Navbar -->
 <slot />
 <!-- Footer -->

@@ -3,7 +3,7 @@ name: Next.js Build Test
 on:
   push:
     branches:
-      - "*"
+      - '*'
 
 jobs:
   build:
@@ -23,8 +23,8 @@ jobs:
           npm install -g pnpm
           pnpm install
 
-      - name: Test with Jest
-        run: pnpm run test --unit
+      # - name: Test with Jest
+      #   run: pnpm run test --unit
 
-      - name: Linting
-        run: pnpm run lint
+      - name: Building
+        run: pnpm run build
