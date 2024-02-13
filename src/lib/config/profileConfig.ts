@@ -12,7 +12,7 @@ export const profile = {
 	about: '',
 	summary: '',
 	avatar: '/me.jpeg',
-	website: String(process.env.WEBSITE_URL)
+	website: ''
 };
 
 export const projects = [
@@ -256,6 +256,7 @@ export const works = [
 		logo: '' // Path to NYU logo image
 	}
 ];
+('process');
 
 // done
 export const skills = [
@@ -280,17 +281,17 @@ export const contactData = {
 		{
 			name: 'GitHub',
 			url: 'https://github.com/zaibutcooler',
-			icon: 'GitHubIcon'
+			icon: 'github'
 		},
 		{
 			name: 'LinkedIn',
 			url: 'https://www.linkedin.com/in/saiyeyintaung/',
-			icon: 'LinkedInIcon'
+			icon: 'linkedin'
 		},
 		{
 			name: 'X',
 			url: 'https://x.com/zaibutcooler',
-			icon: 'XIcon'
+			icon: 'twitter'
 		}
 	]
 };
