@@ -1,1 +1,1 @@
-<div>Page</div>
+<heading>Root Page</heading>
