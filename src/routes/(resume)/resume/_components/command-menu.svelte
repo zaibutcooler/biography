@@ -10,7 +10,12 @@
 	} from '$lib/components/ui/command';
 	import { onMount } from 'svelte';
 
-	export let links: any[] = [];
+	interface LinkType {
+		title: string;
+		url: string;
+	}
+
+	export let links: LinkType[] = [];
 
 	let open = false;
 
@@ -23,7 +28,7 @@
 	};
 
 	onMount(() => {
-		const down = (e: any) => {
+		const down = (e: KeyboardEvent) => {
 			if (e.key === 'j' && (e.metaKey || e.ctrlKey)) {
 				e.preventDefault();
 				toggleMenu();
