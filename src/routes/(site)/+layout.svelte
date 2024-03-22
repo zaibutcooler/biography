@@ -1,10 +1,14 @@
 <script lang="ts">
-	import Footer from '$lib/components/navigations/footer.svelte';
-	import Navbar from '$lib/components/navigations/navbar.svelte';
+	import Background from '$lib/components/background.svelte';
+	import Container from '$lib/components/container.svelte';
+	import Footer from '$lib/components/footer.svelte';
+	import Navbar from '$lib/components/navbar.svelte';
 </script>
 
-<Navbar />
+<Container>
+	<Background />
 
-<slot />
-
-<Footer />
+	<Navbar />
+	<slot />
+	<Footer />
+</Container>

@@ -1,1 +1,4 @@
-<heading>Root Page</heading>
+<script lang="ts">
+</script>
+
+<main>Root Section</main>
