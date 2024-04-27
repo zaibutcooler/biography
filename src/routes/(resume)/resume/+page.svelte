@@ -95,15 +95,16 @@
 			</Avatar>
 		</div>
 		<section>
-			<h2 class="text-xl font-bold">About</h2>
+			<h2 class="mb-4 text-xl font-bold">About</h2>
 			<p class="text-pretty font-mono text-sm text-muted-foreground">
 				{RESUME_DATA.summary}
 			</p>
 		</section>
 		<section>
-			<h2 class="text-xl font-bold">Work Experience</h2>
+			<h2 class="mb-4 text-xl font-bold">Work Experience</h2>
+
 			{#each RESUME_DATA.work as work}
-				<Card>
+				<Card class="mb-3 print:mb-2">
 					<CardHeader>
 						<div class="flex items-center justify-between gap-x-2 text-base">
 							<h3
@@ -138,7 +139,7 @@
 		</section>
 
 		<section class="print-force-new-page scroll-mb-16">
-			<h2 class="text-xl font-bold">Projects</h2>
+			<h2 class="mb-4 text-xl font-bold">Projects</h2>
 			<div
 				class="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-1 lg:grid-cols-1 print:grid-cols-1 print:gap-2"
 			>
@@ -153,7 +154,7 @@
 			</div>
 		</section>
 		<section class="print-force-new-page scroll-mb-16">
-			<h2 class="text-xl font-bold">Clients</h2>
+			<h2 class="mb-4 text-xl font-bold">Clients</h2>
 			<div
 				class="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"
 			>
@@ -168,9 +169,9 @@
 			</div>
 		</section>
 		<section>
-			<h2 class="text-xl font-bold">Education</h2>
+			<h2 class="mb-4 text-xl font-bold">Education</h2>
 			{#each RESUME_DATA.education as education}
-				<Card>
+				<Card class="mb-3 print:mb-2">
 					<CardHeader>
 						<div class="flex items-center justify-between gap-x-2 text-base">
 							<h3 class="font-semibold leading-none">
@@ -186,7 +187,7 @@
 			{/each}
 		</section>
 		<section>
-			<h2 class="text-xl font-bold">Skills</h2>
+			<h2 class="mb-4 text-xl font-bold">Skills</h2>
 			<div class="flex flex-wrap gap-1">
 				{#each RESUME_DATA.skills as skill}
 					<Badge key={skill}>{skill}</Badge>
@@ -210,3 +211,9 @@
 
 	<!-- <CommandMenu/> -->
 </main>
+
+<style>
+	.print-force-new-page {
+		page-break-before: always;
+	}
+</style>

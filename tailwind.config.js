@@ -48,7 +48,7 @@ const config = {
 					foreground: 'hsl(var(--popover-foreground) / <alpha-value>)'
 				},
 				card: {
-					DEFAULT: 'hsl(var(--card) / <alpha-value>)',
+					DEFAULT: 'hsl(var(--card) / <alpha-value>) ',
 					foreground: 'hsl(var(--card-foreground) / <alpha-value>)'
 				}
 			},

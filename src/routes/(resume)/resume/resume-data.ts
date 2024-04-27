@@ -6,7 +6,7 @@ import {
 	projects,
 	skills,
 	works
-} from '$lib/config/profileConfig';
+} from '$lib/config/profile';
 
 export const RESUME_DATA = {
 	name: profile.fullName,

@@ -5,10 +5,12 @@
 	import Navbar from '$lib/components/navbar.svelte';
 </script>
 
-<Container>
-	<Background />
+<Navbar />
+<Background />
 
-	<Navbar />
-	<slot />
-	<Footer />
+<Container>
+	<div class="min-h-screen">
+		<slot />
+	</div>
 </Container>
+<Footer />
