@@ -2,7 +2,7 @@
 	import Container from '$lib/components/container.svelte';
 </script>
 
-<Container>
+<div class="w-full">
 	<h2 class="mt-8 text-center text-lg font-semibold leading-8 text-foreground">
 		Worked with the market leading companies
 	</h2>
@@ -52,4 +52,4 @@
 			alt="Statamic"
 		/>
 	</div>
-</Container>
+</div>
