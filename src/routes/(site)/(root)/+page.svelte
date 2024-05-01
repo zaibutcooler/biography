@@ -10,7 +10,7 @@
 <main>
 	<SuperHeroSection />
 	<Companies />
-	<Timeline/>
+	<Timeline />
 	<MyProjects />
 	<PersonalBlogs />
 	<Announcement />
