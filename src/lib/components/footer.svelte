@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
+	import { FacebookIcon } from 'lucide-svelte';
 	import Facebook from './ui/icons/facebook.svelte';
 	import Github from './ui/icons/github.svelte';
 	import Instagram from './ui/icons/instagram.svelte';
@@ -36,7 +37,7 @@
 			{
 				name: 'Facebook',
 				href: '#',
-				icon: Facebook
+				icon: FacebookIcon
 			},
 			{
 				name: 'Instagram',
@@ -64,7 +65,7 @@
 
 <!-- pb -->
 <footer
-	class="mt-24 border-t border-foreground/5 bg-background/75 backdrop-blur-lg sm:mt-56"
+	class="mt-24 border-t border-foreground/5 bg-background/75 backdrop-blur-lg sm:mt-48"
 	aria-labelledby="footer-heading"
 >
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
@@ -150,7 +151,7 @@
 	</div>
 
 	<div class="mt-16 w-full border-t border-foreground/5 pb-8 pt-8 sm:mt-20 lg:mt-24">
-		<div class="mx-auto max-w-7xl md:flex md:items-center md:justify-between">
+		<div class="mx-auto max-w-7xl px-6 md:flex md:items-center md:justify-between lg:px-8">
 			<div class="flex space-x-6 md:order-2">
 				{#each footerNavigation.social as item}
 					<a href={item.href} class="text-muted-foreground hover:text-muted-foreground">

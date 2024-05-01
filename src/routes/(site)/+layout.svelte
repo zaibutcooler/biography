@@ -5,11 +5,11 @@
 	import Navbar from '$lib/components/navbar.svelte';
 </script>
 
-<Navbar />
 <Background />
+<Navbar />
 
 <Container>
-	<div class="min-h-screen">
+	<div class="min-h-screen pt-16">
 		<slot />
 	</div>
 </Container>

@@ -1,4 +1,5 @@
 export interface Project {
+	projectId: string;
 	title: string;
 	techStack: string[];
 	description: string;
@@ -11,6 +12,7 @@ export interface Project {
 
 export const myProjects: Project[] = [
 	{
+		projectId: 'pj1x4h8q',
 		title: 'Yume',
 		pin: true,
 		techStack: ['python', 'llms', 'structured extraction'],
@@ -23,6 +25,7 @@ export const myProjects: Project[] = [
 	},
 
 	{
+		projectId: 'pj2e3r5t',
 		title: 'Wrack',
 		pin: true,
 		techStack: ['python', 'llms', 'structured extraction'],
@@ -34,6 +37,7 @@ export const myProjects: Project[] = [
 		}
 	},
 	{
+		projectId: 'pj3y7u8i',
 		title: 'Uwu',
 		pin: true,
 		techStack: ['python', 'llms', 'structured extraction'],
@@ -45,6 +49,7 @@ export const myProjects: Project[] = [
 		}
 	},
 	{
+		projectId: 'pj4d5f6g',
 		title: 'Ve-gans',
 		pin: true,
 		techStack: ['Stitchfix', 'pytorch', 'representation learning', 'search'],
@@ -56,6 +61,7 @@ export const myProjects: Project[] = [
 		}
 	},
 	{
+		projectId: 'pj5h3k2l',
 		title: 'Burmese-GPT',
 		pin: true,
 		techStack: ['devops', 'python', 'orchestration', 'observability'],
@@ -67,6 +73,7 @@ export const myProjects: Project[] = [
 		}
 	},
 	{
+		projectId: 'pj6m9n0b',
 		title: 'Kioku',
 		pin: true,
 		techStack: ['typescript', 'prompt engineering'],

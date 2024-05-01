@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Container from '$lib/components/container.svelte';
+	import Logo from './logo.svelte';
 	import ThemeToggleButton from './theme-toggle-button.svelte';
+	import ChatInterface from '$lib/components/chat-interface.svelte';
+	import Button from './ui/button/button.svelte';
 </script>
 
 <nav
@@ -8,10 +11,14 @@
 >
 	<Container>
 		<div class="flex items-center justify-between">
-			<div>Hi</div>
-
 			<div>
+				<Logo />
+			</div>
+
+			<div class="flex gap-4">
 				<ThemeToggleButton />
+
+				<ChatInterface />
 			</div>
 		</div>
 	</Container>
