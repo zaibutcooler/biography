@@ -1,4 +1,14 @@
-export const myClients = [
+export interface Client {
+	title: string;
+	techStack: string[];
+	description: string;
+	link: {
+		label: string;
+		href: string;
+	};
+}
+
+export const myClients: Client[] = [
 	{
 		title: 'Rewind AI',
 		techStack: ['memory', 'personal computing'],

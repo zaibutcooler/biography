@@ -1,4 +1,5 @@
 <script lang="ts">
+	import BlogCard from '$lib/components/blog-card.svelte';
 	import { AspectRatio } from '$lib/components/ui/aspect-ratio';
 	import { buttonVariants } from '$lib/components/ui/button';
 	import { Separator } from '$lib/components/ui/separator';
@@ -7,6 +8,8 @@
 	// import type { PageData } from './$types';
 
 	// export let data: PageData;
+
+	const recommendedBlogs :any= ['','','']
 
 	const blog = demoBlog;
 </script>
@@ -44,6 +47,15 @@
 		</div>
 	</section>
 	<Separator class="my-6" />
-	<!-- <BlogRecommendation recommendedBlogs={recommendedBlogs} /> -->
-	<div>Recommended Blogs</div>
+	<h1 class="text-3xl font-semibold">You might also like</h1>
+	<div>
+		<div class="grid gap-6 lg:grid-cols-3">
+			{#each recommendedBlogs as recommendedBlog}
+		
+				<BlogCard blog={recommendedBlog} />
+			 
+			{/each}
+		  </div>
+	</div>
+
 </main>

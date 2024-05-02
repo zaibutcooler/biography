@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Button, type Props, buttonVariants } from '$lib/components/ui/button/index.js';
-	import { cn } from '$lib/utils.js';
+	import { cn } from '$lib/utils';
 	import { ArrowLeft } from 'lucide-svelte';
 	import type { VariantProps } from 'tailwind-variants';
 	import { getEmblaContext } from './context.js';

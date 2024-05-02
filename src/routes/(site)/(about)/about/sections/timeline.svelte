@@ -28,7 +28,8 @@
 		}
 	];
 </script>
-
+<div class="mt-32 lg:mt-48">
+	
 <div class="grid w-full grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
 	{#each timelines as item}
 		<div>
@@ -53,4 +54,6 @@
 			</p>
 		</div>
 	{/each}
+</div>
+
 </div>

@@ -7,12 +7,14 @@
 		CardDescription,
 		CardContent
 	} from '$lib/components/ui/card';
+	import type { Client } from '$lib/config/clients';
+	export let client:Client;
 </script>
 
 <Card>
-	<CardHeader>Yo</CardHeader>
+	<CardHeader>{client.title}</CardHeader>
 
-	<CardContent>Yo</CardContent>
+	<CardContent><p class="text-sm">{client.description}</p></CardContent>
 
-	<CardFooter>Yo</CardFooter>
+	<!-- <CardFooter>Yo</CardFooter> -->
 </Card>
