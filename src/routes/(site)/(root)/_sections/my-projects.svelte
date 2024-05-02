@@ -5,7 +5,7 @@
 
 <div class="grid grid-cols-3 gap-4">
 	{#each myProjects as project}
-		<ProjectCard />
+		<ProjectCard {project} />
 	{/each}
 </div>
 <div>To display my blogs</div>

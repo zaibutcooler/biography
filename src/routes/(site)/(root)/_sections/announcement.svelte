@@ -10,7 +10,13 @@
 </script>
 
 <Card>
-	<CardHeader>Announcement</CardHeader>
+	<CardHeader>
+		<CardTitle>Announcement</CardTitle>
+	</CardHeader>
 
-	<CardContent>Yo</CardContent>
+	<CardContent class="flex gap-8">
+		<div class="h-[380px] w-[380px] rounded bg-muted"></div>
+
+		<div></div>
+	</CardContent>
 </Card>
