@@ -7,57 +7,46 @@
 	import PaperPlane from 'svelte-radix/PaperPlane.svelte';
 	import { cn } from '$lib/utils';
 	import { ScrollArea } from './ui/scroll-area';
+	import axios from 'axios';
 
-	const users = [
-		{
-			name: 'Olivia Martin',
-			email: 'm@example.com',
-			avatar: '/avatars/01.png'
-		},
-		{
-			name: 'Isabella Nguyen',
-			email: 'isabella.nguyen@email.com',
-			avatar: '/avatars/03.png'
-		},
-		{
-			name: 'Emma Wilson',
-			email: 'emma@example.com',
-			avatar: '/avatars/05.png'
-		},
-		{
-			name: 'Jackson Lee',
-			email: 'lee@example.com',
-			avatar: '/avatars/02.png'
-		},
-		{
-			name: 'William Kim',
-			email: 'will@email.com',
-			avatar: '/avatars/04.png'
-		}
-	] as const;
-
-	type User = (typeof users)[number];
-	let messages = [
-		{
-			role: 'agent',
-			content: 'Hi, how can I help you today?'
-		},
-		{
-			role: 'user',
-			content: "Hey, I'm having trouble with my account."
-		},
-		{
-			role: 'agent',
-			content: 'What seems to be the problem?'
-		},
-		{
-			role: 'user',
-			content: "I can't log in."
-		}
-	];
+	type ChatMessage = {
+		role: 'system' | 'user';
+		content: string;
+	};
+	let messages: ChatMessage[] = [];
 
 	let input = '';
+	let loading = false;
 	$: inputLength = input.trim().length;
+
+	const handleSubmit = async () => {
+		try {
+			loading = true;
+			if (inputLength === 0) return;
+			messages = [
+				...messages,
+				{
+					role: 'user',
+					content: input
+				}
+			];
+			input = '';
+
+			const response = await axios.post('/api/chat', messages);
+
+			messages = [
+				...messages,
+				{
+					role: 'system',
+					content: response.data.message
+				}
+			];
+		} catch (error) {
+			console.log(error);
+		} finally {
+			loading = false;
+		}
+	};
 </script>
 
 <Dialog.Root>
@@ -77,7 +66,7 @@
 					{#each messages as message}
 						<div
 							class={cn(
-								'flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm',
+								'flex w-max max-w-[340px] flex-col gap-2 rounded-lg px-3 py-2 text-sm lg:max-w-[400px]',
 								message.role === 'user' ? 'ml-auto bg-primary text-primary-foreground' : 'bg-muted'
 							)}
 						>
@@ -95,15 +84,7 @@
 			<form
 				on:submit={(event) => {
 					event.preventDefault();
-					if (inputLength === 0) return;
-					messages = [
-						...messages,
-						{
-							role: 'user',
-							content: input
-						}
-					];
-					input = '';
+					handleSubmit();
 				}}
 				class="flex w-full items-center space-x-2"
 			>
@@ -114,7 +95,7 @@
 					autocomplete="off"
 					bind:value={input}
 				/>
-				<Button type="submit" size="icon" disabled={inputLength === 0}>
+				<Button type="submit" size="icon" disabled={inputLength === 0 || loading}>
 					<PaperPlane class="h-4 w-4" />
 					<span class="sr-only">Send</span>
 				</Button>
