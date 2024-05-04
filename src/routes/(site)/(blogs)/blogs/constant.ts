@@ -20,7 +20,7 @@ export interface BlogContent {
 	text: string | null;
 }
 
-// export interface BlogStructrue {
+// export interface Blog {
 //   title: string;
 //   prompt?: string;
 //   topic: string[];
@@ -30,9 +30,9 @@ export interface BlogContent {
 //   created: any;
 // }
 
-export type BlogStructrue = z.infer<typeof blogFormSchema>;
+export type Blog = z.infer<typeof blogFormSchema>;
 
-export const initialData: BlogStructrue = {
+export const initialData: Blog = {
 	title: '',
 	prompt: '',
 	image: '',

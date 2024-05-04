@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { groq } from '$lib/utils/groq';
+import { groq } from '$lib/server/groq';
 export const POST: RequestHandler = async ({ request }) => {
 	const messages = await request.json();
 	console.log(messages);

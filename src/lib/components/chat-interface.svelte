@@ -17,6 +17,7 @@
 
 	let input = '';
 	let loading = false;
+	let errorMessage = '';
 	$: inputLength = input.trim().length;
 
 	const handleSubmit = async () => {
@@ -43,6 +44,7 @@
 			];
 		} catch (error) {
 			console.log(error);
+			errorMessage = 'Something went wrong!';
 		} finally {
 			loading = false;
 		}
@@ -56,9 +58,9 @@
 	<Dialog.Content class="sm:max-w-[500px]">
 		<Dialog.Header>
 			<Dialog.Title>Have a talk with Zai</Dialog.Title>
-			<Dialog.Description>
+			<!-- <Dialog.Description>
 				Make changes to your profile here. Click save when you're done.
-			</Dialog.Description>
+			</Dialog.Description> -->
 		</Dialog.Header>
 		<ScrollArea class=" h-[340px]">
 			<div class="space-y-4 py-4">
@@ -66,13 +68,33 @@
 					{#each messages as message}
 						<div
 							class={cn(
-								'flex w-max max-w-[340px] flex-col gap-2 rounded-lg px-3 py-2 text-sm lg:max-w-[400px]',
+								'flex w-max max-w-[340px] flex-col gap-2 rounded-lg px-3 py-2 text-sm leading-relaxed lg:max-w-[400px]',
 								message.role === 'user' ? 'ml-auto bg-primary text-primary-foreground' : 'bg-muted'
 							)}
 						>
 							{message.content}
 						</div>
 					{/each}
+					{#if loading}
+						<div
+							class={cn(
+								'flex w-max max-w-[340px] flex-col gap-2 rounded-lg px-3 py-2 text-sm leading-relaxed lg:max-w-[400px]',
+								'animate-pulse bg-muted'
+							)}
+						>
+							Loading...
+						</div>
+					{/if}
+					{#if errorMessage}
+						<div
+							class={cn(
+								'flex w-max max-w-[340px] flex-col gap-2 rounded-lg px-3 py-2 text-sm leading-relaxed lg:max-w-[400px]',
+								'bg-destructive'
+							)}
+						>
+							{errorMessage}
+						</div>
+					{/if}
 				{:else}
 					<div class="flex h-[300px] w-full items-center justify-center border border-dashed">
 						<h1>Help sir zai</h1>

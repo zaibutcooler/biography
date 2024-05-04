@@ -51,6 +51,7 @@
 		"groq-sdk": "^0.3.3",
 		"lucide-svelte": "^0.312.0",
 		"mode-watcher": "^0.3.0",
+		"mongoose": "^8.3.3",
 		"svelte-radix": "^1.1.0",
 		"sveltekit-superforms": "^1.13.3",
 		"tailwind-merge": "^2.2.0",

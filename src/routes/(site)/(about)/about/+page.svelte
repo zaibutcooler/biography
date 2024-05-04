@@ -7,22 +7,32 @@
 	import WorkHistory from './sections/work-history.svelte';
 	import GlobeSphere from '$lib/components/globe-sphere.svelte';
 	import Timeline from './sections/timeline.svelte';
+	import SocialMedia from './sections/social-media.svelte';
+	import AspectRatio from '$lib/components/ui/aspect-ratio/aspect-ratio.svelte';
 </script>
 
 <AboutHero />
-<Timeline/>
+<Timeline />
 <div class="mt-32 lg:mt-48">
+	<section class="grid grid-cols-12 gap-6">
+		<div class="col-span-8 space-y-6">
+			<!-- <AspectRatio ratio={16 / 7} class="bg-muted">
+				<img
+					src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
+					alt="Gray by Drew Beamer"
+					class="h-full w-full rounded-md object-cover"
+				/>
+			</AspectRatio> -->
+			<FullStory />
+		</div>
 
-<section class="grid grid-cols-12 gap-4">
-	<div class="col-span-8">
-		<FullStory />
-	</div>
+		<div class="col-span-4 space-y-6">
+			<Education />
+			<WorkHistory />
 
-	<div class="col-span-4 space-y-4">
-		<WorkHistory />
-		<Education />
-	</div>
-</section>
+			<SocialMedia />
+		</div>
+	</section>
 </div>
 <Clients />
 
