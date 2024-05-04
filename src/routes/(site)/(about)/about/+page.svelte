@@ -27,6 +27,13 @@
 		</div>
 
 		<div class="col-span-4 space-y-6">
+			<AspectRatio ratio={16 / 14} class="bg-muted">
+				<img
+					src="/robbin-kid.jpg"
+					alt="zai as a kid"
+					class="h-full w-full rounded-md object-cover"
+				/>
+			</AspectRatio>
 			<Education />
 			<WorkHistory />
 
