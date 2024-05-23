@@ -1,7 +1,3 @@
-// import { GitHubIcon } from "@/components/resume/icons/GitHubIcon"
-// import { LinkedInIcon } from "@/components/resume/icons/LinkedInIcon"
-// import { XIcon } from "@/components/resume/icons/XIcon"
-
 import { aboutMe } from './about';
 import { myClients } from './clients';
 import { myProjects } from './projects';

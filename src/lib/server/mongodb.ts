@@ -1,3 +1,4 @@
+import { MONGODB_URL } from '$env/static/private';
 import mongoose, { type ConnectOptions } from 'mongoose';
 
 let isConnected = false;
@@ -11,10 +12,10 @@ export const connectMongoDB = () => {
 			return;
 		}
 
-		mongoose.connect(String(process.env.MONGODB_URL), {
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-			dbName: 'Premia'
+		mongoose.connect(String(MONGODB_URL), {
+			// useNewUrlParser: true,
+			// useUnifiedTopology: true,
+			dbName: 'Blogs'
 		} as ConnectOptions);
 		isConnected = true;
 		console.log('mongodb connected');

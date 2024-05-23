@@ -20,16 +20,6 @@ export interface BlogContent {
 	text: string | null;
 }
 
-// export interface Blog {
-//   title: string;
-//   prompt?: string;
-//   topic: string[];
-//   image: string;
-//   contents: BlogContent[];
-//   minRead: string | number;
-//   created: any;
-// }
-
 export type Blog = z.infer<typeof blogFormSchema>;
 
 export const initialData: Blog = {
