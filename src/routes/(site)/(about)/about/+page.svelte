@@ -9,7 +9,7 @@
 	import Timeline from './sections/timeline.svelte';
 	import SocialMedia from './sections/social-media.svelte';
 	import AspectRatio from '$lib/components/ui/aspect-ratio/aspect-ratio.svelte';
-	import Testo from './sections/testo.svelte';
+	import Gallery from './sections/gallery.svelte';
 </script>
 
 <AboutHero />
@@ -44,8 +44,7 @@
 	</div>
 </div>
 
-<Clients />
-
+<Gallery />
 <Summary />
 
 <GlobeSphere />

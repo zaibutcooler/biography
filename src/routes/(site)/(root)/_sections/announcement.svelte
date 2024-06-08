@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Container from '$lib/components/container.svelte';
+	import Button from '$lib/components/ui/button/button.svelte';
 	import {
 		Card,
 		CardHeader,
@@ -10,55 +11,59 @@
 	} from '$lib/components/ui/card';
 	import { CheckCircleIcon } from 'lucide-svelte';
 
-	const points =    [
-      "dolor sit amet consect",
-      "dolor sit amet consect",
-      "dolor sit amet consect",
-      "dolor sit amet consect",
-      "dolor sit amet consect",
-      "dolor sit amet consect",
-    ]
+	const points = [
+		'dolor sit amet consect',
+		'dolor sit amet consect',
+		'dolor sit amet consect',
+		'dolor sit amet consect',
+		'dolor sit amet consect',
+		'dolor sit amet consect'
+	];
 </script>
 
-<div class="relative isolate -z-10 mt-32 sm:mt-40">
-	<Container>
-	  <div class="flex flex-col gap-16　bg-card/75 text-card-foreground shadow-sm backdrop-blur-lg border border-foreground/5 px-6 py-16  sm:rounded-3xl sm:p-8 w-full lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
-		<img
-		  class="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm　bg-muted"
-		  src="/career1.avif"
-		  alt=""
-		 
-		/>
-		<div class="w-full flex-auto">
-		  <h2 class="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-			This is freakin title babe
-		  </h2>
-		  <p class="mt-6 text-lg leading-8 text-foreground/90">
-			This title is stupid as hell
-		  </p>
-		  <ul
-			role="list"
-			class="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-foreground sm:grid-cols-2"
-		  >
-			{#each points as benefit}
-			  <li class="flex gap-x-3">
-				<CheckCircleIcon
-				  class="h-7 w-5 flex-none"
-				  aria-hidden="true"
-				/>
-				{benefit}
-			  </li>
-			{/each}
-		  </ul>
-		  <div class="mt-10 flex">
-			<a
-			  href="#"
-			  class="text-sm font-semibold leading-6 text-blue-500"
-			>
-			  See our job postings <span aria-hidden="true">&rarr;</span>
-			</a>
-		  </div>
+<div class="mt-28 w-full">
+	<div
+		class="relative isolate overflow-hidden border bg-card px-6 pt-16 shadow-sm sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
+	>
+		<!-- <svg
+			viewBox="0 0 1024 1024"
+			class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+			aria-hidden="true"
+		>
+			<circle
+				cx="512"
+				cy="512"
+				r="512"
+				fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+				fill-opacity="0.7"
+			/>
+			<defs>
+				<radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+					<stop stop-color="#7775D6" />
+					<stop offset="1" stop-color="#E935C1" />
+				</radialGradient>
+			</defs>
+		</svg> -->
+		<div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+			<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+				Boost your productivity.<br />Start using our app today.
+			</h2>
+			<p class="mt-6 text-lg leading-8 text-muted-foreground">
+				Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing
+				sagittis vel nulla.
+			</p>
+			<div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+				<Button>Hello</Button>
+			</div>
 		</div>
-	  </div>
-	</Container>
-  </div>
+		<div class="relative mt-16 h-80 lg:mt-8">
+			<img
+				class="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+				src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+				alt="App screenshot"
+				width="1824"
+				height="1080"
+			/>
+		</div>
+	</div>
+</div>

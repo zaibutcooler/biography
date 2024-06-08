@@ -12,10 +12,10 @@
 		<CardContent>
 			{#each educations as education}
 				<div class="mb-2">
-					<p class="text-sm">
+					<p class="text-sm font-medium">
 						{education.school}
 					</p>
-					<p class="text-sm">
+					<p class="text-sm text-muted-foreground">
 						{education.start} - {education.end}
 					</p>
 				</div>

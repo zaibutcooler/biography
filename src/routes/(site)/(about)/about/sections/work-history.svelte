@@ -12,11 +12,11 @@
 		<CardContent>
 			{#each works as work}
 				<div class="mb-2">
-					<p class="text-sm">
+					<p class="text-sm font-medium">
 						{work.company}
 						{work.title}
 					</p>
-					<p class="text-sm">
+					<p class="text-sm text-muted-foreground">
 						{work.start} - {work.end}
 					</p>
 				</div>
