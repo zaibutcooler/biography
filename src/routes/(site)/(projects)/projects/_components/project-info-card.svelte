@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import {
 		Card,
@@ -17,14 +18,17 @@
 	} from '$lib/components/ui/dropdown-menu';
 	import { Pagination, PaginationContent, PaginationItem } from '$lib/components/ui/pagination';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
+	import type { Project } from '$lib/config/projects';
 	import { ChevronLeft, ChevronRight, Copy, MoreVertical } from 'lucide-svelte';
+
+	export let project: Project;
 </script>
 
 <Card class="overflow-hidden">
 	<CardHeader class="flex flex-row items-start bg-muted/50">
 		<div class="grid gap-0.5">
 			<CardTitle class="group flex items-center gap-2 text-lg">
-				Yuumi
+				{project.title}
 				<Button
 					size="icon"
 					variant="outline"
@@ -58,39 +62,41 @@
 	</CardHeader>
 	<CardContent class="p-6 text-sm">
 		<div class="grid gap-3">
-			<div class="font-semibold">Project Details</div>
+			<div class="font-semibold">Summary</div>
 			<ul class="grid gap-3">
-				<li class="flex items-center justify-between">
-					<span class="text-muted-foreground"> Technology: SvelteKit </span>
-				</li>
-				<li class="flex items-center justify-between">
-					<span class="text-muted-foreground">
-						Description: A personal portfolio website to showcase my projects and skills.
-					</span>
-				</li>
+				<span class="text-muted-foreground">
+					{project.description}
+				</span>
+				<div class="flex flex-wrap gap-1">
+					{#each project.techStack as stack}
+						<Badge class="px-2 py-0 text-[10px]" variant="secondary">
+							{stack}
+						</Badge>
+					{/each}
+				</div>
 			</ul>
 			<Separator class="my-2" />
-			<ul class="grid gap-3">
+			<ul class="grid gap-3 text-sm">
+				<li class="flex items-center justify-between">
+					<span class="text-muted-foreground">Category</span>
+					<span>{project.category}</span>
+				</li>
+				<li class="flex items-center justify-between">
+					<span class="text-muted-foreground">Started</span>
+					<span>{project.startedDate}</span>
+				</li>
 				<li class="flex items-center justify-between">
 					<span class="text-muted-foreground">Duration</span>
-					<span>3 months</span>
+					<span>{project.duration}</span>
 				</li>
 				<li class="flex items-center justify-between">
 					<span class="text-muted-foreground">Status</span>
-					<span>Completed</span>
-				</li>
-				<li class="flex items-center justify-between font-semibold">
-					<span class="text-muted-foreground">Live URL</span>
-					<span
-						><a href="https://myportfolio.com" target="_blank" class="text-blue-500"
-							>myportfolio.com</a
-						></span
-					>
+					<span>{project.status}</span>
 				</li>
 			</ul>
 		</div>
 		<Separator class="my-4" />
-		<div class="grid grid-cols-2 gap-4">
+		<!-- <div class="grid grid-cols-2 gap-4">
 			<div class="grid gap-3">
 				<div class="font-semibold">Project Features</div>
 				<ul class="grid gap-0.5 text-muted-foreground">
@@ -108,25 +114,30 @@
 				</ul>
 			</div>
 		</div>
-		<Separator class="my-4" />
+		<Separator class="my-4" /> -->
 		<div class="grid gap-3">
-			<div class="font-semibold">Contact Information</div>
+			<div class="font-semibold">Links</div>
 			<dl class="grid gap-3">
-				<div class="flex items-center justify-between">
-					<dt class="text-muted-foreground">Developer</dt>
-					<dd>Jane Doe</dd>
-				</div>
-				<div class="flex items-center justify-between">
-					<dt class="text-muted-foreground">Email</dt>
-					<dd>
-						<a href="mailto:jane@example.com">jane@example.com</a>
-					</dd>
-				</div>
-				<div class="flex items-center justify-between">
-					<dt class="text-muted-foreground">Phone</dt>
-					<dd>
-						<a href="tel:+1234567890">+1 234 567 890</a>
-					</dd>
+				<div>
+					{#each project.links as link}
+						<div class="mb-2 flex items-center gap-2">
+							<img
+								src={`https://www.google.com/s2/favicons?domain=${link.href}`}
+								class="h-5 w-5 rounded-full"
+								alt="favicon"
+							/>
+							<div class="">
+								<h3 class="text-sm">{link.label}</h3>
+								<a
+									href={link.href}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-xs hover:underline"
+									>{link.href.replace('https://', '').replace('www.', '')}</a
+								>
+							</div>
+						</div>
+					{/each}
 				</div>
 			</dl>
 		</div>

@@ -1,18 +1,3 @@
-<!-- import { Badge } from "@/components/ui/badge"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-
-interface Props {
-  title: string
-  description: string
-  tags: readonly string[]
-  link?: string
-} -->
 <script lang="ts">
 	import { Badge } from '$lib/components/ui/badge';
 	import {
