@@ -3,84 +3,95 @@ export interface Project {
 	title: string;
 	techStack: string[];
 	description: string;
-	link: {
+	links: {
 		label: string;
 		href: string;
-	};
+	}[];
 	pin: boolean;
 }
 
 export const myProjects: Project[] = [
 	{
-		projectId: 'pj1x4h8q',
+		projectId: 'yume',
 		title: 'Yume',
 		pin: true,
-		techStack: ['python', 'llms', 'structured extraction'],
+		techStack: ['python', 'llms', 'pytorch', 'generative-ai', 'open-sourced'],
 		description:
-			'Structured extraction for LLMS using Pydantic, Over 30k monthly downloads on PyPI.',
-		link: {
-			label: 'Instructor',
-			href: 'https://jxnl.github.io/instructor/'
-		}
+			'Japanese LLM (1.5B parameters), highly inspired by Andrej Karpathy trained upon dialogs from animanga and aimed to generate anime conversations',
+		links: [
+			{
+				label: 'Github',
+				href: 'https://github.com/zaibutcooler/yume/'
+			}
+		]
 	},
 
 	{
-		projectId: 'pj2e3r5t',
-		title: 'Wrack',
+		projectId: 'deepmine',
+		title: 'Deepmine',
 		pin: true,
-		techStack: ['python', 'llms', 'structured extraction'],
-		description:
-			'Structured extraction for LLMS using Pydantic, Over 30k monthly downloads on PyPI.',
-		link: {
-			label: 'Instructor',
-			href: 'https://jxnl.github.io/instructor/'
-		}
+		techStack: ['ruby', 'deep-learning', 'autograd', 'open-sourced'],
+		description: 'A minimalist (pytorch-like) deep learning library with ruby.',
+		links: [
+			{
+				label: 'Github',
+				href: 'https://github.com/zaibutcooler/yume/'
+			}
+		]
 	},
 	{
-		projectId: 'pj3y7u8i',
-		title: 'Uwu',
+		projectId: 'librarian',
+		title: 'Librarian',
 		pin: true,
-		techStack: ['python', 'llms', 'structured extraction'],
+		techStack: ['ruby on rails', 'productivity', 'full-stack'],
 		description:
-			'Structured extraction for LLMS using Pydantic, Over 30k monthly downloads on PyPI.',
-		link: {
-			label: 'Instructor',
-			href: 'https://jxnl.github.io/instructor/'
-		}
+			'A book management system for busy entrepreneurs built with ruby on rails and rails ui.',
+		links: [
+			{
+				label: 'Github',
+				href: 'https://github.com/zaibutcooler/librarian'
+			}
+		]
 	},
 	{
-		projectId: 'pj4d5f6g',
+		projectId: 've-gans',
 		title: 'Ve-gans',
 		pin: true,
 		techStack: ['Stitchfix', 'pytorch', 'representation learning', 'search'],
 		description:
 			'Lead computer vision research, and embedding search system using multi-modal embeddings powered by image, text, and impression data.',
-		link: {
-			label: 'Stylist Shuffle',
-			href: 'https://www.stitchfix.com/women/blog/inside-stitchfix/how-style-shuffle-works/'
-		}
+		links: [
+			{
+				label: 'Github',
+				href: 'https://github.com/zaibutcooler/librarian'
+			}
+		]
 	},
 	{
-		projectId: 'pj5h3k2l',
+		projectId: 'burmese-gpt',
 		title: 'Burmese-GPT',
 		pin: true,
-		techStack: ['devops', 'python', 'orchestration', 'observability'],
+		techStack: ['python', 'llms', 'pytorch', 'generative-ai', 'open-sourced'],
 		description:
-			'Designed and implemented Flight, a recommendation framework that improved system reliability and scalability, handling over 350 million daily requests.',
-		link: {
-			label: 'Learn more about Flight at Stitchfix',
-			href: 'https://jxnl.notion.site/Recommendations-with-Flight-at-Stitch-Fix-bf5de4e932b34af1ad912294236d81ba'
-		}
+			'Opensourced LLM (500M parameters) model for Burmese Language with low level pytorch implementation. ',
+		links: [
+			{
+				label: 'Github',
+				href: 'https://github.com/zaibutcooler/burmese-gpt'
+			}
+		]
 	},
 	{
-		projectId: 'pj6m9n0b',
+		projectId: 'kioku',
 		title: 'Kioku',
 		pin: true,
 		techStack: ['typescript', 'prompt engineering'],
 		description: 'AI-powered journaling application with long-term memory and semantic search.',
-		link: {
-			label: 'Journal',
-			href: 'http://usejournal.xyz'
-		}
+		links: [
+			{
+				label: 'Github',
+				href: 'https://github.com/zaibutcooler/kioku'
+			}
+		]
 	}
 ];

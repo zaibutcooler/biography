@@ -11,7 +11,7 @@
 </script>
 
 <main class="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-12">
-	<section class="mx-auto w-full max-w-3xl space-y-8 bg-white print:space-y-6">
+	<section class="mx-auto w-full max-w-3xl space-y-8 print:space-y-6">
 		<div class="flex items-center justify-between">
 			<div class="flex-1 space-y-1.5">
 				<h1 class="text-2xl font-bold">{RESUME_DATA.name}</h1>
@@ -104,7 +104,7 @@
 			<h2 class="mb-4 text-xl font-bold">Work Experience</h2>
 
 			{#each RESUME_DATA.work as work}
-				<Card class="mb-3 print:mb-2">
+				<Card class="-mx-3 mb-3 border-border print:mb-2">
 					<CardHeader>
 						<div class="flex items-center justify-between gap-x-2 text-base">
 							<h3
@@ -148,12 +148,12 @@
 						title={project.title}
 						description={project.description}
 						tags={project.techStack}
-						link={'link' in project ? project.link.href : undefined}
+						link={project.links[0].href || undefined}
 					/>
 				{/each}
 			</div>
 		</section>
-		<section class="print-force-new-page scroll-mb-16">
+		<!-- <section class="print-force-new-page scroll-mb-16">
 			<h2 class="mb-4 text-xl font-bold">Clients</h2>
 			<div
 				class="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"
@@ -167,11 +167,11 @@
 					/>
 				{/each}
 			</div>
-		</section>
+		</section> -->
 		<section>
 			<h2 class="mb-4 text-xl font-bold">Education</h2>
 			{#each RESUME_DATA.education as education}
-				<Card class="mb-3 print:mb-2">
+				<Card class="-mx-3 mb-3 border-border print:mb-2">
 					<CardHeader>
 						<div class="flex items-center justify-between gap-x-2 text-base">
 							<h3 class="font-semibold leading-none">

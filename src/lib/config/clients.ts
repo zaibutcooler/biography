@@ -10,18 +10,17 @@ export interface Client {
 
 export const myClients: Client[] = [
 	{
-		title: 'Rewind AI',
-		techStack: ['memory', 'personal computing'],
-		description:
-			'Rewind AI is a personal memory assistant that helps you remember, organize, and navigate your life.',
+		title: 'Greenlight',
+		techStack: ['full-stack', 'erb', 'pwa'],
+		description: 'Made Student Management System for ',
 		link: {
-			label: 'rewind.ai',
-			href: 'http://rewind.ai'
+			label: 'greenlightedu.vercel.app',
+			href: 'http://greenlightedu.vercel.app'
 		}
 	},
 	{
-		title: 'Naro',
-		techStack: ['python', 'prompt engineering', 'sales'],
+		title: 'Resonant',
+		techStack: ['react-native', 'social-network', 'aws'],
 		description:
 			'Naro sits in the background, using contextual clues to proactively select the right content and messaging for each customer conversation, from emails to meetings.',
 		link: {
@@ -57,37 +56,6 @@ export const myClients: Client[] = [
 		link: {
 			label: 'pydantic.dev',
 			href: 'http://pydantic.dev'
-		}
-	},
-	{
-		title: 'Weight & Biases',
-		techStack: ['technical writing', 'education', 'machine learning'],
-		description:
-			'Wandb (Weights & Biases) provides a platform for tracking machine learning experiments, offering tools for visualization, comparison, and collaboration in ML projects.',
-		link: {
-			label: 'wandb.ai',
-			href: 'https://wandb.ai/'
-		}
-	},
-	{
-		title: 'New Computer',
-		techStack: ['personal computing', 'python'],
-		description:
-			'Dot by New Computer is an intelligent guide designed to help you remember, organize, and navigate your life.',
-		link: {
-			label: 'new.computer',
-			href: 'http://new.computer'
-		}
-	},
-
-	{
-		title: 'Greenlight Private School',
-		techStack: ['nextjs', 'postgres', 'next-auth', 'prisma', 'tailwind'],
-		description:
-			'Student/Budget management system to manage more than 500 students. Nextjs is not a usual tech stack but they liked it.',
-		link: {
-			label: 'Greenlightedu',
-			href: 'http://greenlightedu.vercel.app'
 		}
 	}
 ];

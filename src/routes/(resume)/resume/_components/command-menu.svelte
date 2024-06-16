@@ -41,7 +41,7 @@
 </script>
 
 <p
-	class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden"
+	class="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-background p-1 text-center text-sm text-muted-foreground print:hidden"
 >
 	Press{' '}
 	<kbd

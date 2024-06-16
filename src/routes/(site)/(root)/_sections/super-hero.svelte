@@ -10,7 +10,7 @@
 			<h1
 				class="max-w-2xl text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:col-span-2 xl:col-auto"
 			>
-				Lorem ipsum, dolor sit amet consectetur
+				Turning the ideas into products
 			</h1>
 			<div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
 				<p class="text-lg leading-8 text-muted-foreground">

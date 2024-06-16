@@ -12,7 +12,8 @@ export const profile = {
 	about: aboutMe[0].content,
 	summary: aboutMe[1].content,
 	avatar: '/me.jpeg',
-	website: ''
+	website: '',
+	company: '&copy; 2023 Archaic Group Pty Ltd T/A Premia AI. All rights reserved.'
 };
 
 export const projects = myProjects;
@@ -110,5 +111,10 @@ export const contactData = {
 			url: 'https://x.com/zaibutcooler',
 			icon: 'twitter'
 		}
-	]
+	],
+	youtube: {
+		name: 'Youtube',
+		url: 'https://youtube.com/zaibutcooler',
+		icon: 'youtube'
+	}
 };
