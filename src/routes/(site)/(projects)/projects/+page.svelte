@@ -1,13 +1,12 @@
 <script lang="ts">
+	import ProjectCard from '$lib/components/project-card.svelte';
 	import { projects } from '$lib/config/profile';
+	import ProjectHeader from './_components/project-header.svelte';
 </script>
 
-<div>
+<ProjectHeader />
+<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
 	{#each projects as project}
-		<div>
-			<a href={`/projects/${project.projectId}`}>
-				{project.title}
-			</a>
-		</div>
+		<ProjectCard {project} />
 	{/each}
 </div>

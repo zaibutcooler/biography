@@ -1,6 +1,16 @@
 import { burmeseGPT } from './burmese-gpt';
 import { deepmine } from './deepmine';
+import { greenlight } from './greenlight';
+import { henbai } from './henbai';
+import { instaAgent } from './insta-agent';
+import { kazeki } from './kazeki';
+import { kioku } from './kioku';
 import { librarian } from './librarian';
+import { mailAgent } from './mail-agent';
+import { premerly } from './premerly';
+import { umi } from './umi';
+import { uta } from './uta';
+import { uwu } from './uwu';
 import { vegans } from './ve-gans';
 import { yume } from './yume';
 
@@ -34,4 +44,20 @@ type ProjectCategory =
 	| 'deeplearning'
 	| 'dev-tool';
 
-export const myProjects: Project[] = [yume, burmeseGPT, vegans, deepmine, librarian];
+export const myProjects: Project[] = [
+	yume,
+	burmeseGPT,
+	vegans,
+	deepmine,
+	librarian,
+	premerly,
+	kioku,
+	greenlight,
+	umi,
+	instaAgent,
+	uta,
+	henbai,
+	kazeki,
+	mailAgent,
+	uwu
+];

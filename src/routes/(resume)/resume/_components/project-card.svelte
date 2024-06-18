@@ -38,7 +38,7 @@
 	<CardContent class="mt-auto flex">
 		<div class="mt-2 flex flex-wrap gap-1">
 			{#each tags as tag}
-				<Badge class="px-1 py-0 text-[10px]" variant="secondary">
+				<Badge class="px-2 py-0 text-[10px]" variant="secondary">
 					{tag}
 				</Badge>
 			{/each}

@@ -96,25 +96,7 @@
 			</ul>
 		</div>
 		<Separator class="my-4" />
-		<!-- <div class="grid grid-cols-2 gap-4">
-			<div class="grid gap-3">
-				<div class="font-semibold">Project Features</div>
-				<ul class="grid gap-0.5 text-muted-foreground">
-					<li>Responsive Design</li>
-					<li>Interactive UI</li>
-					<li>SEO Optimized</li>
-				</ul>
-			</div>
-			<div class="grid auto-rows-max gap-3">
-				<div class="font-semibold">Tools Used</div>
-				<ul class="text-muted-foreground">
-					<li>Svelte</li>
-					<li>Tailwind CSS</li>
-					<li>Netlify</li>
-				</ul>
-			</div>
-		</div>
-		<Separator class="my-4" /> -->
+
 		<div class="grid gap-3">
 			<div class="font-semibold">Links</div>
 			<dl class="grid gap-3">

@@ -2,10 +2,11 @@ import type { Project } from '.';
 
 export const umi: Project = {
 	projectId: 'umi',
-	title: 'Umi',
+	title: 'Umi (海)',
 	pin: false,
-	techStack: [],
-	description: '',
+	techStack: ['pytorch', 'diffusion', 'python', 'images'],
+	description:
+		'A simple diffusion model from scratch with PyTorch to generate the beauty of nature in image form',
 	info: [],
 	duration: '12 months',
 	startedDate: 'June 2023',

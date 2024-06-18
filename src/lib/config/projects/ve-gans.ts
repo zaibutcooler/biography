@@ -7,7 +7,13 @@ export const vegans: Project = {
 	techStack: ['research-paper', 'generative-ai', 'computer-vision', 'archi-drawings'],
 	description:
 		'A research project for generative ai model specifically to generate floorplans and archi-drawings.',
-	info: [],
+	info: [
+		{
+			label: 'text',
+			content:
+				'A research project where I mainly focus on a new type of GANs for the image generation task where we need to get accurate results.. '
+		}
+	],
 	duration: '6 months',
 	startedDate: 'January 2024',
 	category: 'generative-ai',
@@ -19,7 +25,7 @@ export const vegans: Project = {
 		},
 		{
 			label: 'Research Paper',
-			href: 'https://github.com/zaibutcooler/librarian'
+			href: 'https://docs.google.com/document/d/1nm6Pj3HaDo-W2HAQPPrgGqWIH74SPgQZAHxC5Uk20PQ/edit?usp=sharing'
 		},
 		{
 			label: 'Huggingface Space',

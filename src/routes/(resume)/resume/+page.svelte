@@ -153,7 +153,7 @@
 				{/each}
 			</div>
 		</section>
-		<!-- <section class="print-force-new-page scroll-mb-16">
+		<section class="print-force-new-page scroll-mb-16">
 			<h2 class="mb-4 text-xl font-bold">Clients</h2>
 			<div
 				class="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"
@@ -167,7 +167,7 @@
 					/>
 				{/each}
 			</div>
-		</section> -->
+		</section>
 		<section>
 			<h2 class="mb-4 text-xl font-bold">Education</h2>
 			{#each RESUME_DATA.education as education}

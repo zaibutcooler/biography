@@ -24,6 +24,6 @@ export const RESUME_DATA = {
 	education: educations,
 	work: works,
 	skills: skills,
-	projects: projects,
-	clients: clients
+	projects: projects.filter((project) => project.pin),
+	clients: clients.filter((client) => client.resume)
 } as const;

@@ -2,7 +2,7 @@ import type { Project } from '.';
 
 export const yume: Project = {
 	projectId: 'yume',
-	title: 'Yume',
+	title: 'Yume　(夢)',
 	pin: true,
 	duration: '6 months',
 	startedDate: 'January 2024',
@@ -14,13 +14,16 @@ export const yume: Project = {
 	info: [
 		{
 			label: 'image',
-			content: '/project-assets/example.png'
+			content: '/project-assets/yume_1.png'
 		},
-		// { label: 'video', content: 'https://youtu.be/qJcfMeAeZAQ?list=RDqJcfMeAeZAQ' },
 		{
 			label: 'text',
-			content:
-				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ducimus qui dolor dolore, natus culpa. Placeat adipisci debitis ipsam aut. Corporis iste earum, repellat aspernatur nisi a corrupti! Ipsa, quod.'
+			content: ''
+		},
+
+		{
+			label: 'image',
+			content: '/project-assets/yume_2.png'
 		}
 	],
 	links: [

@@ -5,8 +5,9 @@ export const greenlight: Project = {
 	title: 'Greenlight',
 
 	pin: false,
-	techStack: [],
-	description: '',
+	techStack: ['erp', 'next.js', 'pwa', 'private-school'],
+	description:
+		'A modern ERP application for private-school where the owner can manage student payments, grades, staffs, expenses and many more.',
 	info: [],
 	duration: '12 months',
 	startedDate: 'June 2023',
