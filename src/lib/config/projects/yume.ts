@@ -18,7 +18,7 @@ export const yume: Project = {
 		},
 		{
 			label: 'text',
-			content: ''
+			content: 'I could speak and understand Japanese and '
 		},
 
 		{

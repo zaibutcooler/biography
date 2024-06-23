@@ -21,15 +21,15 @@ export const myEducations = [
 
 export const myWorks = [
 	{
-		company: 'Archaic',
-		link: 'https://archaic.vercel.app',
-		badges: ['CTO', 'Researcher', 'Project Manager'],
-		title: 'Cheif Technology Officer',
-		logo: '',
-		start: '2023',
-		end: '2024',
+		company: 'Resonant',
+		link: '#',
+		badges: ['React-Native', 'Next.js', 'Nest.js'],
+		title: 'Lead Developer',
+		start: '2024',
+		end: 'Today',
 		description:
-			'My first official startup venture where we train/finetune image to image models for the real estate industry use-cases.'
+			'Met a guy who got sued by his CTO and decided to make his ideas and dreams into reality.',
+		logo: '' // Path to NYU logo image
 	},
 	{
 		company: 'StudyCrew',
@@ -42,7 +42,17 @@ export const myWorks = [
 			'Joined initially as a full-stack developer but ends up working as a maintainer/lead developer.',
 		logo: '' // Path to NYU logo image
 	},
-
+	{
+		company: 'Archaic',
+		link: 'https://archaic.vercel.app',
+		badges: ['CTO', 'Researcher', 'Project Manager'],
+		title: 'Cheif Technology Officer',
+		logo: '',
+		start: '2023',
+		end: '2024',
+		description:
+			'My first official startup venture where we train/finetune image to image models for the real estate industry use-cases.'
+	},
 	{
 		company: 'Konoike',
 		link: 'https://www.studycrw.world/',

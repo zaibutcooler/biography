@@ -14,7 +14,7 @@ export const profile = {
 	summary: aboutMe[1].content,
 	avatar: '/me.jpeg',
 	website: 'https://zaibutcooler.vercel.app',
-	company: '&copy; 2023 Archaic Group Pty Ltd T/A Premia AI. All rights reserved.'
+	company: '&copy; 2023 Zai. All rights reserved.'
 };
 
 export const skills = [

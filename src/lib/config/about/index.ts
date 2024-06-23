@@ -8,7 +8,7 @@ const about: About = {
 
 const summary: About = {
 	content:
-		'Born and rasied by two Civil Engineering graduates. A talented and blessed young man who started working at a big Japanese construction company named Konoike(sub-contract) at 16. After two years, I transitioned into tech entrepreneurship, co-founded my first startup venture at 19, became a war refugee at 20 and now helping other startups while learning.'
+		'Started working at a big Japanese construction company named Konoike(sub-contract) as a lead-architect at 16, I transitioned into tech and entrepreneurship after two years to persue my dream, co-founded my first startup venture at 19, became a war refugee and lost everything I had at 20. Now, helping other startups grow while trying to get out of this war-torn country.'
 };
 
 export const aboutMe: About[] = [about, summary];
