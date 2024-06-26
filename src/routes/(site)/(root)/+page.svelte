@@ -9,9 +9,9 @@
 
 <main>
 	<SuperHeroSection />
-	<Companies />
+	<!-- <Companies /> -->
 	<!-- <Timeline /> -->
-	<MyProjects />
-	<PersonalBlogs />
-	<Announcement />
+	<!-- <MyProjects /> -->
+	<!-- <PersonalBlogs /> -->
+	<!-- <Announcement /> -->
 </main>

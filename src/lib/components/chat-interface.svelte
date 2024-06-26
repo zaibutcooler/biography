@@ -8,6 +8,7 @@
 	import { cn } from '$lib/utils';
 	import { ScrollArea } from './ui/scroll-area';
 	import axios from 'axios';
+	import { Cloud } from 'lucide-svelte';
 
 	type ChatMessage = {
 		role: 'system' | 'user';
@@ -96,8 +97,11 @@
 						</div>
 					{/if}
 				{:else}
-					<div class="flex h-[300px] w-full items-center justify-center border border-dashed">
-						<h1>Help sir zai</h1>
+					<div
+						class="flex h-[300px] w-full flex-col items-center justify-center border border-dashed"
+					>
+						<Cloud />
+						<h3>Ask me something?</h3>
 					</div>
 				{/if}
 			</div>

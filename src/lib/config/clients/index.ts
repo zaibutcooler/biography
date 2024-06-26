@@ -16,7 +16,7 @@ export const myClients: Client[] = [
 		title: 'Resonant',
 		techStack: ['react-native', 'nestjs', 'nextjs', 'aws'],
 		description:
-			'Made amobile app(react-native), admin dashboard(nextjs) and a server(nestjs) to revolutionize the way artists, venues and audiences connect, buying tickets and making concerts.',
+			'Made a mobile app(react-native), admin dashboard(nextjs) and a server(nestjs) to revolutionize the way artists, venues and audiences connect, buying tickets and making concerts.',
 		link: {
 			label: 'narohq.com',
 			href: 'http://narohq.com'

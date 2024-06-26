@@ -11,10 +11,10 @@
 			>The collection of all the projects that I have done "Alone", tried and worked.</Card.Description
 		>
 	</Card.Header>
-	<Card.Content class="h-[300px]  px-6 py-4">
-		<div class="h-full w-full border border-dashed"></div>
+	<Card.Content class=" px-6 py-6">
+		<img src={'/project-assets/wallpaper.jpeg'} />
 	</Card.Content>
-	<Card.Footer class=" flex gap-4 px-6 py-4">
+	<!-- <Card.Footer class=" flex gap-4 px-6 py-4">
 		<Input class="w-full" /><Button>Search</Button>
-	</Card.Footer>
+	</Card.Footer> -->
 </Card.Root>
