@@ -54,7 +54,7 @@
 
 <Dialog.Root>
 	<Dialog.Trigger class={buttonVariants({ className: 'rounded-full' })}
-		>Talk With Zai</Dialog.Trigger
+		>Talk with Ai</Dialog.Trigger
 	>
 	<Dialog.Content class="sm:max-w-[500px]">
 		<Dialog.Header>

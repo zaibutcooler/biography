@@ -29,4 +29,5 @@
 </svelte:head>
 
 <ModeWatcher />
+
 <slot />

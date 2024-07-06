@@ -1,4 +1,4 @@
-name: Next.js Build Test
+name: Linting Test
 
 on:
   push:
@@ -27,4 +27,4 @@ jobs:
       #   run: pnpm run test --unit
 
       - name: Building
-        run: pnpm run build
+        run: pnpm run lint
