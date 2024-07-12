@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { siteConfig } from '$lib/config/site';
 	import '../app.pcss';
 	import { ModeWatcher } from 'mode-watcher';
 </script>
@@ -25,6 +26,20 @@
 		<meta name="twitter:title" content={$page.data.meta.title} />
 		<meta name="twitter:description" content={$page.data.meta.description} />
 		<meta name="twitter:image" content={$page.data.meta.imageUrl} />
+	{:else}
+		<meta name="description" content={siteConfig.description} />
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={siteConfig.title} />
+		<meta property="og:description" content={siteConfig.description} />
+		<meta property="og:image" content={'/thumbnail.jpeg'} />
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={siteConfig.title} />
+		<meta name="twitter:description" content={siteConfig.description} />
+		<meta name="twitter:image" content={'/thumbnail.jpeg'} />
 	{/if}
 </svelte:head>
 

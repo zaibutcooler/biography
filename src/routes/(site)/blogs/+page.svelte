@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { BlogType } from '$lib/server/mongodb';
 	import { onMount } from 'svelte';
-	import type { PageServerData } from './$types';
+	import type { PageServerData } from '../blogs/$types';
 	import type { Blog } from './constant';
 
 	export let data: PageServerData;
