@@ -3,7 +3,7 @@
 	import * as Card from '$lib/components/ui/card/index.js';
 	import type { Project } from '$lib/config/projects';
 	import ProjectInfoCard from '../_components/project-info-card.svelte';
-	import type { PageData } from './$types';
+	import type { PageData } from '../../projects/[projectId]/$types';
 
 	export let data: PageData;
 	const project: Project = data.project;
