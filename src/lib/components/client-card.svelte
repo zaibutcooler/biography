@@ -8,7 +8,7 @@
 		CardContent
 	} from '$lib/components/ui/card';
 	import type { Client } from '$lib/config/clients';
-	export let client:Client;
+	export let client: Client;
 </script>
 
 <Card>
