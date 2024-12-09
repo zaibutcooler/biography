@@ -8,7 +8,7 @@ const about: About = {
 
 const summary: About = {
 	content:
-		'Started working at a big Japanese construction company named Konoike(sub-contract) as a lead-architect at 16, I transitioned into tech and entrepreneurship after two years to persue my dream, co-founded my first startup venture at 19, became a war refugee and lost everything I had at 20. Now, helping other startups grow while trying to get out of this war-torn country.'
+		"Living a life that I would never regret. I love tech, I chose tech over something that I was good at. I'm a tech enthusiast, a software engineer, a startup founder, a mentor, a speaker, a writer, a consultant, a freelancer, a war refugee, a survivor, a dreamer, a thinker, a builder, a creator, a lifelong learner, a world traveler and a human being. I'm a person who believes in the power of technology to change the world"
 };
 
 export const aboutMe: About[] = [about, summary];
