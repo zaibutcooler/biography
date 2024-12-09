@@ -1,18 +1,17 @@
 <script lang="ts">
-
-	import type { HTMLAttributes } from "svelte/elements";
-	import { cn } from "$lib/utils";
-	import { Ellipsis } from ".";
+	import type { HTMLAttributes } from 'svelte/elements';
+	import { cn } from '$lib/utils';
+	import { Ellipsis } from '.';
 
 	type $$Props = HTMLAttributes<HTMLSpanElement>;
 
-	let className: $$Props["class"] = undefined;
+	let className: $$Props['class'] = undefined;
 	export { className as class };
 </script>
 
 <span
 	aria-hidden
-	class={cn("flex h-9 w-9 items-center justify-center", className)}
+	class={cn('flex h-9 w-9 items-center justify-center', className)}
 	{...$$restProps}
 >
 	<Ellipsis class="h-4 w-4" />

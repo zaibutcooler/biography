@@ -3,6 +3,7 @@
 	import { Input } from '$lib/components/ui/input';
 	import { contactData, profile } from '$lib/config/profile';
 	import { Github, LinkedinIcon, X, YoutubeIcon } from 'lucide-svelte';
+	import { routes } from '$lib/config/routes';
 
 	const footerNavigation = {
 		solutions: [
@@ -12,14 +13,14 @@
 			{ name: 'Insights', href: '#' }
 		],
 		support: [
-			{ name: 'Patreon', href: '/pricing' },
+			{ name: 'Patreon', href: 'https://www.patreon.com/zaibutcooler' },
 			{ name: 'Email', href: '#' },
 			{ name: 'Guides', href: '#' },
 			{ name: 'API Status', href: '#' }
 		],
 		company: [
-			{ name: 'About', href: 'https://archaic.vercel.app/' },
-			{ name: 'Blog', href: '/blogs' },
+			{ name: 'About', href: routes.ABOUT },
+			{ name: 'Blog', href: routes.BLOGS },
 			{ name: 'Jobs', href: '#' },
 			{ name: 'Press', href: '#' },
 			{ name: 'Partners', href: '#' }

@@ -9,7 +9,7 @@
 
 	// export let data: PageData;
 
-	const recommendedBlogs :any= ['','','']
+	const recommendedBlogs: any = ['', '', ''];
 
 	const blog = demoBlog;
 </script>
@@ -51,11 +51,8 @@
 	<div>
 		<div class="grid gap-6 lg:grid-cols-3">
 			{#each recommendedBlogs as recommendedBlog}
-		
 				<BlogCard blog={recommendedBlog} />
-			 
 			{/each}
-		  </div>
+		</div>
 	</div>
-
 </main>

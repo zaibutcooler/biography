@@ -53,8 +53,7 @@
 </script>
 
 <Dialog.Root>
-	<Dialog.Trigger class={buttonVariants({ className: 'rounded-full' })}
-		>Talk with Ai</Dialog.Trigger
+	<Dialog.Trigger class={buttonVariants({ className: 'rounded-full' })}>Talk with Ai</Dialog.Trigger
 	>
 	<Dialog.Content class="sm:max-w-[500px]">
 		<Dialog.Header>

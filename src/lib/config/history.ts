@@ -21,26 +21,26 @@ export const myEducations = [
 
 export const myWorks = [
 	{
-		company: 'Resonant',
-		link: '#',
-		badges: ['React-Native', 'Next.js', 'Nest.js'],
-		title: 'Lead Developer',
+		company: 'Carching',
+		link: 'https://carching.co',
+		badges: ['Next.js', 'React.js', 'Flutter'],
+		title: 'Software Engineer',
 		start: '2024',
 		end: 'Today',
 		description:
-			'Met a guy who got sued by his CTO and decided to make his ideas and dreams into reality.',
-		logo: '' // Path to NYU logo image
+			'Met a cool guy from Malaysia and ended up working in his company. Shout out to Jeshua.',
+		logo: ''
 	},
 	{
-		company: 'StudyCrew',
-		link: 'https://www.studycrw.world/',
-		badges: ['React', 'Next.js'],
-		title: 'Lead Developer',
-		start: '2022',
+		company: 'Aspora',
+		link: 'https://aspora.io',
+		badges: ['Next.js', 'Ruby on Rails', 'React.js'],
+		title: 'Full Stack Developer',
+		start: '2024',
 		end: 'Today',
 		description:
-			'Joined initially as a full-stack developer but ends up working as a maintainer/lead developer.',
-		logo: '' // Path to NYU logo image
+			'Helping a friend from Ireland to build his dream project. It was a great experience.',
+		logo: ''
 	},
 	{
 		company: 'Archaic',
@@ -49,9 +49,19 @@ export const myWorks = [
 		title: 'Cheif Technology Officer',
 		logo: '',
 		start: '2023',
+		end: 'Today',
+		description: 'My first official startup venture which I never regretted for starting.'
+	},
+	{
+		company: 'StudyCrew',
+		link: 'https://www.studycrw.world/',
+		badges: ['React', 'Next.js'],
+		title: 'Lead Developer',
+		start: '2023',
 		end: '2024',
 		description:
-			'My first official startup venture where we train/finetune image to image models for the real estate industry use-cases.'
+			'Joined initially as a full-stack developer but ends up working as a maintainer/lead developer.',
+		logo: ''
 	},
 	{
 		company: 'Konoike',

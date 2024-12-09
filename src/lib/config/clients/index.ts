@@ -14,12 +14,12 @@ export interface Client {
 export const myClients: Client[] = [
 	{
 		title: 'Resonant',
-		techStack: ['react-native', 'nestjs', 'nextjs', 'aws'],
+		techStack: ['react-native', 'ruby on rails', 'nextjs', 'aws'],
 		description:
-			'Made a mobile app(react-native), admin dashboard(nextjs) and a server(nestjs) to revolutionize the way artists, venues and audiences connect, buying tickets and making concerts.',
+			'Made a mobile app(react-native), admin dashboard(nextjs) and a server(ruby on rails) to revolutionize the way artists, venues and audiences connect, buying tickets and making concerts.',
 		link: {
-			label: 'narohq.com',
-			href: 'http://narohq.com'
+			label: 'resonant-app.com',
+			href: 'https://resonant-app.com'
 		},
 		pin: false,
 		resume: true,
@@ -40,13 +40,13 @@ export const myClients: Client[] = [
 	},
 
 	{
-		title: 'Talent Scope',
+		title: 'Aspora',
 		techStack: ['nextjs', 'shadcn-ui', 'stripe'],
 		description:
-			'Developed(Still in progress) a platform to connect freelancers and businesses. Used nextjs, shadcn-ui and stripe for the payment system.',
+			'A platform to connect job-seeker and businesses to find the best match. Worked as a full-stack developer to build the platform.',
 		link: {
-			label: 'greenlightedu.vercel.app',
-			href: 'http://greenlightedu.vercel.app'
+			label: 'aspora.io',
+			href: 'http://aspora.io'
 		},
 		pin: false,
 		resume: true,
@@ -70,19 +70,6 @@ export const myClients: Client[] = [
 		techStack: ['pytorch', 'lightning-ai', 'transformers', 'gpt'],
 		description:
 			'Help developing an image encoder-decoder model for Piping and instrumentation diagram (P&ID) diagrams which is the heart of Chemical Engineering.',
-		link: {
-			label: '#',
-			href: '#'
-		},
-		pin: false,
-		resume: true,
-		logo: ''
-	},
-	{
-		title: 'Zmi',
-		techStack: ['pytorch', 'opensourced', 'datasets'],
-		description:
-			'Data mined and consulted for an open-source non-profit organization, scraped, stored and collected over 1TB to contribute the minority lanauages.',
 		link: {
 			label: '#',
 			href: '#'
