@@ -6,7 +6,7 @@ export const burmeseGPT: Project = {
 	pin: true,
 	techStack: ['python', 'llms', 'pytorch', 'generative-ai', 'open-sourced'],
 	description:
-		'Opensourced LLM (500M parameters) model for Burmese Language with low level pytorch implementation. ',
+		'Opensourced LLM (120M-500M parameters) model for Burmese Language with low level pytorch implementation. ',
 	info: [
 		{
 			label: 'text',

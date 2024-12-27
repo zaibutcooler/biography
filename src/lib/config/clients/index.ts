@@ -13,13 +13,26 @@ export interface Client {
 
 export const myClients: Client[] = [
 	{
-		title: 'Resonant',
-		techStack: ['react-native', 'ruby on rails', 'nextjs', 'aws'],
+		title: 'Kanbawza Education',
+		techStack: ['python', 'pytorch'],
 		description:
-			'Made a mobile app(react-native), admin dashboard(nextjs) and a server(ruby on rails) to revolutionize the way artists, venues and audiences connect, buying tickets and making concerts.',
+			'Lectured more than 100 kids in my local region for 1 month by teaching them basic python and machine learning',
 		link: {
-			label: 'resonant-app.com',
-			href: 'https://resonant-app.com'
+			label: '#',
+			href: '#'
+		},
+		pin: false,
+		resume: true,
+		logo: ''
+	},
+	{
+		title: 'Shopdora',
+		techStack: ['pytorch', 'aws', 'django'],
+		description:
+			'Worked for a product recommendation algorithm for a local business owner who is trying to go online. ',
+		link: {
+			label: '#',
+			href: '#'
 		},
 		pin: false,
 		resume: true,
@@ -29,7 +42,7 @@ export const myClients: Client[] = [
 		title: 'Greenlight',
 		techStack: ['full-stack', 'erb', 'pwa'],
 		description:
-			'One of the biggest private school in the region. Worked for a pwa for entire school management system including payments, grading, staffs, accounts and many more.',
+			'Biggest private school in the region. Worked for a PWA for entire school management system including payments, grading, staffs, accounts and many more.',
 		link: {
 			label: 'greenlightedu.vercel.app',
 			href: 'http://greenlightedu.vercel.app'
@@ -38,28 +51,14 @@ export const myClients: Client[] = [
 		resume: true,
 		logo: ''
 	},
-
 	{
-		title: 'Aspora',
-		techStack: ['nextjs', 'shadcn-ui', 'stripe'],
+		title: 'Martin',
+		techStack: ['next.js', 'postgresql'],
 		description:
-			'A platform to connect job-seeker and businesses to find the best match. Worked as a full-stack developer to build the platform.',
+			'Worked for a project named Aspora where we reverse the process of recruitment and job-seeking.',
 		link: {
-			label: 'aspora.io',
-			href: 'http://aspora.io'
-		},
-		pin: false,
-		resume: true,
-		logo: ''
-	},
-	{
-		title: 'StudyCrew',
-		techStack: ['nextjs', 'flutter', 'supabase'],
-		description:
-			'Contributed to a non-profit education startup as a full-stack developer and later ends up working as a maintainer and a lead developer.',
-		link: {
-			label: 'Study Crew',
-			href: 'http://studycrew.world/'
+			label: '#',
+			href: '#'
 		},
 		pin: false,
 		resume: true,
@@ -70,6 +69,44 @@ export const myClients: Client[] = [
 		techStack: ['pytorch', 'lightning-ai', 'transformers', 'gpt'],
 		description:
 			'Help developing an image encoder-decoder model for Piping and instrumentation diagram (P&ID) diagrams which is the heart of Chemical Engineering.',
+		link: {
+			label: '#',
+			href: '#'
+		},
+		pin: false,
+		resume: true,
+		logo: ''
+	},
+	{
+		title: 'Resonant',
+		techStack: ['react-native', 'ruby on rails', 'nextjs', 'aws'],
+		description:
+			'Made a mobile app(react-native) and a server(ruby on rails) to revolutionize the way artists, venues and audiences connect.',
+		link: {
+			label: 'resonant-app.com',
+			href: 'https://resonant-app.com'
+		},
+		pin: false,
+		resume: true,
+		logo: ''
+	},
+	{
+		title: 'Shwe Pyi Construction',
+		techStack: ['tauri', 'react'],
+		description: 'Made a basic desktop app to manage supply chain and employee(labour) data.',
+		link: {
+			label: '#',
+			href: '#'
+		},
+		pin: false,
+		resume: true,
+		logo: ''
+	},
+	{
+		title: 'Jinja Express',
+		techStack: ['next.js', 'pwa', 'express.js'],
+		description:
+			'Migrated the Admin Panel (Frontend) from React.js To Next.js using best practices.',
 		link: {
 			label: '#',
 			href: '#'
