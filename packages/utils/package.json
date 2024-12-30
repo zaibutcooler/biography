@@ -1,0 +1,10 @@
+{
+  "name": "@repo/utils",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:",
+    "@types/node": "catalog:"
+  }
+}
