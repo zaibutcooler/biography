@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3001",
+    "dev": "next dev --port 5000",
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
     "@repo/data": "workspace:*",
+    "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
+    "lucide-react": "^0.475.0",
     "next": "14.2.8",
     "react": "catalog:react18",
     "react-dom": "catalog:react18"
