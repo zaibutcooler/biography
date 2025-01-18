@@ -78,6 +78,9 @@ importers:
       react-dom:
         specifier: catalog:react18
         version: 18.3.1(react@18.3.1)
+      react-hook-form:
+        specifier: ^7.54.2
+        version: 7.54.2(react@18.3.1)
     devDependencies:
       '@next/eslint-plugin-next':
         specifier: 14.2.8

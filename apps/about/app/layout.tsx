@@ -1,9 +1,7 @@
 import "@repo/ui/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import {PropsWithChildren} from "react"
-
-const inter = Inter({ subsets: ["latin"] });
+import {mono} from "~/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Zai",
@@ -15,7 +13,7 @@ export default function RootLayout({
 }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={mono.className}>{children}</body>
     </html>
   );
 }
