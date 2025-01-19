@@ -13,7 +13,11 @@ export default function RootLayout({
 }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={mono.className}>{children}</body>
+      <body className={mono.className}>
+        <div className={"mx-auto max-w-7xl px-5"}>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
