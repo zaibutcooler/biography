@@ -9,6 +9,7 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
+    "@hookform/resolvers": "^4.1.0",
     "@repo/data": "workspace:*",
     "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
