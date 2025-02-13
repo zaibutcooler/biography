@@ -8,7 +8,7 @@ const about: About = {
 
 const summary: About = {
 	content:
-		"Living a life that I would never regret. I love tech, I chose tech over something that I was good at. I'm a tech enthusiast, a software engineer, a startup founder, a mentor, a speaker, a writer, a consultant, a freelancer, a war refugee, a survivor, a dreamer, a thinker, a builder, a creator, a lifelong learner, a world traveler and a human being. I'm a person who believes in the power of technology to change the world"
+		'Living a life of no regrets, I co-founded a startup to create floorplans with diffusion models, co-founder of BMC (Burmese MachineLearning Community), the initial creator of 120M BurmeseGPT (I faced some tragedy along the way and now my friend is recreating and scaling it), a lead contributor of Non-Profit Education Startup (StudyCrew). I also freelance and work part-time, building scalable web and cloud solutions as a side-quest.'
 };
 
 export const aboutMe: About[] = [about, summary];
