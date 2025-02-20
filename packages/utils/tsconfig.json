@@ -1,0 +1,11 @@
+{
+  "extends": "@repo/tsconfigs/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@repo/data/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

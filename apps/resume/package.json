@@ -1,0 +1,34 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 5000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "@repo/data": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "lucide-react": "^0.475.0",
+    "next": "14.2.8",
+    "react": "catalog:react18",
+    "react-dom": "catalog:react18"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "14.2.8",
+    "@repo/eslint": "workspace:*",
+    "@repo/tsconfigs": "workspace:*",
+    "@types/eslint": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:react18",
+    "@types/react-dom": "catalog:react18",
+    "autoprefixer": "^10",
+    "eslint": "catalog:",
+    "postcss": "^8",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
+  }
+}
