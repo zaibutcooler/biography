@@ -1,40 +1,34 @@
 import Link from "next/link";
 import { GitHubIcon, LinkedInIcon, XIcon } from "~/components/icons";
+import profile from "@repo/data/profile";
+import clients from "@repo/data/profile/clients";
+import skills from "@repo/data/profile/skills";
 
 export const RESUME_DATA = {
-  name: "Jason Liu",
-  initials: "jxnl",
-  location: "New York",
-  locationLink: "https://www.google.com/maps/place/New+York",
-  about:
-    "I am currently on sabbatical at South Park Commons, where I consult and advise fast growing startups on applied AI and tech strategy.",
-  summary: (
-    <>
-      Check out my{" "}
-      <Link className="underline" href="https://jxnl.github.io/blog/">
-        blog
-      </Link>
-      , if you are looking for my writing.
-    </>
-  ),
+  name: profile.fullName,
+  initials: profile.nickName,
+  location: profile.location,
+  locationLink: profile.locationLink,
+  about: profile.about,
+  summary: profile.summary,
   avatarUrl: "https://avatars.githubusercontent.com/u/4852235?v=4",
-  personalWebsiteUrl: "https://jxnl.github.io/blog/",
+  personalWebsiteUrl: profile.website,
   contact: {
-    email: "jason@jxnl.co",
+    email: profile.email,
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/jxnl",
+        url: profile.urls.github,
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/jxnlco/",
+        url: profile.urls.linkedIn,
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/jxnlco",
+        url: profile.urls.x,
         icon: XIcon,
       },
     ],
@@ -126,17 +120,7 @@ export const RESUME_DATA = {
       logo: "", // Path to NYU logo image
     },
   ],
-  skills: [
-    "Python",
-    "Pytorch",
-    "LLMs",
-    "Prompt Engineering",
-    "Structured Extraction",
-    "Observability",
-    "Developer Tools",
-    "Machine Learning",
-    "Data Science",
-  ],
+  skills,
   projects: [
     {
       title: "Instructor",
@@ -179,87 +163,5 @@ export const RESUME_DATA = {
       },
     },
   ],
-  clients: [
-    {
-      title: "Rewind AI",
-      techStack: ["memory", "personal computing"],
-      description:
-        "Rewind AI is a personal memory assistant that helps you remember, organize, and navigate your life.",
-      link: {
-        label: "rewind.ai",
-        href: "http://rewind.ai",
-      },
-    },
-    {
-      title: "Naro",
-      techStack: ["python", "prompt engineering", "sales"],
-      description:
-        "Naro sits in the background, using contextual clues to proactively select the right content and messaging for each customer conversation, from emails to meetings.",
-      link: {
-        label: "narohq.com",
-        href: "http://narohq.com",
-      },
-    },
-    {
-      title: "Trunk Tools",
-      techStack: ["construction", "technical advisor", "retrival"],
-      description:
-        "Trunk Tools addresses the skilled labor shortage in construction, enhancing workforce productivity through AI-based tools.",
-      link: {
-        label: "trunktools.com",
-        href: "https://trunktools.com/",
-      },
-    },
-    {
-      title: "Modal Labs",
-      techStack: ["technical writing", "python"],
-      description:
-        "Modal specializes in cloud functions, offering a platform for running generative AI models, large-scale batch jobs, and more.",
-      link: {
-        label: "modal.com",
-        href: "https://modal.com/",
-      },
-    },
-    {
-      title: "Pydantic",
-      techStack: ["technical writing", "python"],
-      description:
-        "Pydantic provides data validation and settings management using Python type annotations, enforcing type hints at runtime with user-friendly error handling.",
-      link: {
-        label: "pydantic.dev",
-        href: "http://pydantic.dev",
-      },
-    },
-    {
-      title: "Weight & Biases",
-      techStack: ["technical writing", "education", "machine learning"],
-      description:
-        "Wandb (Weights & Biases) provides a platform for tracking machine learning experiments, offering tools for visualization, comparison, and collaboration in ML projects.",
-      link: {
-        label: "wandb.ai",
-        href: "https://wandb.ai/",
-      },
-    },
-    {
-      title: "New Computer",
-      techStack: ["personal computing", "python"],
-      description:
-        "Dot by New Computer is an intelligent guide designed to help you remember, organize, and navigate your life.",
-      link: {
-        label: "new.computer",
-        href: "http://new.computer",
-      },
-    },
-
-    {
-      title: "Kay.ai",
-      techStack: ["retrieval", "evals", "infrastucture", "python"],
-      description:
-        "Retrieve relevant context from the semantic web for your LLM apps with fully hosted embeddings.",
-      link: {
-        label: "Kay.ai",
-        href: "http://Kay.ai",
-      },
-    },
-  ],
+  clients,
 } as const;
