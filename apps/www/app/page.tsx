@@ -3,6 +3,7 @@ import { Footer } from "~/components/footer";
 import { Navbar } from "~/components/navbar";
 import { Container } from "@repo/ui/components/ui/container";
 import { Button } from "@repo/ui/components/ui/button";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -27,7 +28,9 @@ export default function Page() {
           </div>
         </div>
 
-        <div className={"h-[424px] w-[424px] bg-primary rounded-lg"}></div>
+        <div className={"h-[424px] w-[424px] bg-primary rounded-lg"}>
+          <Image src={"/me.jpeg"} alt={"Zai"} layout={"fill"} />
+        </div>
       </Container>
       <Footer />
     </div>
