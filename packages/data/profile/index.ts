@@ -5,11 +5,9 @@ const profile = {
   locationLink: "https://www.google.com/maps/place/Taunggyi",
   about: "",
   summary: "",
-  avatar: "/me.jpeg",
+  avatar: "https://avatars.githubusercontent.com/u/47269252",
   website: "https://zaibutcooler.vercel.app",
-
   email: "zaibutcooler@icloud.com",
-
   urls: {
     github: "https://github.com/zaibutcooler",
     linkedIn: "https://www.linkedin.com/in/saiyeyintaung/",
