@@ -26,8 +26,8 @@ export default function Page() {
           </div>
         </div>
 
-        <div className={"relative h-[300px] w-[300px] sm:h-[424px] sm:w-[424px] bg-primary rounded-lg overflow-hidden"}>
-          <Image src={"/me.jpeg"} alt={"Zai"} layout={"fill"} objectFit={"cover"} />
+        <div className={"relative h-[300px] w-[300px] sm:h-[424px] sm:w-[424px] rounded-lg overflow-hidden bg-primary"}>
+          {/*<Image src={"/me.jpeg"} alt={"Zai"} layout={"fill"} objectFit={"cover"} />*/}
         </div>
       </Container>
       <Footer />

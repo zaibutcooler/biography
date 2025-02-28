@@ -25,6 +25,7 @@ export const Footer: React.FC = () => {
         ))}
       </div>
     </Container>
+      <div className={"h-16 md:h-0"} />
     </footer>
   );
 };
