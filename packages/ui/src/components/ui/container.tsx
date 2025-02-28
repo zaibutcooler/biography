@@ -11,7 +11,7 @@ export const Container: React.FC<ContainerProps> = ({
 }) => {
   return (
     <div
-      className={cn("max-w-7xl mx-auto px-2 md:px-4 lg:px-6 ", className)}
+      className={cn("max-w-7xl mx-auto px-4 lg:px-6 ", className)}
       {...props}
     />
   );
