@@ -9,9 +9,10 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
     "@repo/data": "workspace:*",
+    "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
+    "lucide-react": "^0.476.0",
     "next": "14.2.8",
     "react": "catalog:react18",
     "react-dom": "catalog:react18"
