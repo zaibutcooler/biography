@@ -14,6 +14,8 @@ const profile = {
     github: "https://github.com/zaibutcooler",
     linkedIn: "https://www.linkedin.com/in/saiyeyintaung/",
     x: "https://x.com/zaibutcooler",
+    youtube: "https://www.youtube.com/channel/zaibutcooler",
+    instagram: "https://www.instagram.com/zaibutcooler",
   },
 };
 

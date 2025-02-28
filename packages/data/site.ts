@@ -1,7 +1,7 @@
 export const siteConfig = {
-  productionUrl: "https://zaibutcooler.vercel.app",
-  resumeUrl: "https://www.linkedin.com/in/zaibotcooler",
-  aboutUrl: "https://www.linkedin.com/in/zaibotcooler",
-  contactUrl: "https://www.linkedin.com/in/zaibotcooler",
-  rootUrl: "https://zaibutcooler.vercel.app",
+  productionUrl: "https://kingzai.com",
+  resumeUrl: "https://resume.kingzai.com",
+  aboutUrl: "https://about.kingzai.com",
+  contactUrl: "https://about.kingzai.com/contact",
+  rootUrl: "https://kingzai.com",
 };
