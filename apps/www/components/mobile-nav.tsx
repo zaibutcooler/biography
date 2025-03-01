@@ -1,13 +1,15 @@
+"use client"
+
 import React from "react";
 import {
   History,
-  Home,
+  Home, LanguagesIcon,
   LucideIcon,
   MapIcon,
   NotebookPen,
   ScrollText,
   Sun,
-  User,
+  User
 } from "lucide-react";
 import {
   Drawer,
@@ -23,6 +25,7 @@ import { Container } from "@repo/ui/components/ui/container";
 import { Button } from "@repo/ui/components/ui/button";
 import Link from "next/link";
 import { Logo } from "@repo/ui/components/logo";
+import { siteConfig } from "@repo/data/site";
 
 interface Navlink {
   label: string;
@@ -32,12 +35,12 @@ interface Navlink {
 }
 
 const navlinks: Navlink[] = [
-  { label: "Home", route: "/", icon: Home },
-  { label: "About", route: "/about", icon: User },
-  { label: "Projects", route: "/projects", icon: History },
-  { label: "Resume", route: "/resume", icon: ScrollText },
-  { label: "Blogs", route: "/blogs", icon: NotebookPen },
+  { label: "About", route: siteConfig.aboutUrl, icon: User },
+  { label: "Contact", route: siteConfig.contactUrl, icon: NotebookPen },
+  { label: "Projects", route: siteConfig.projectsUrl, icon: History },
+  { label: "Resume", route: siteConfig.resumeUrl, icon: ScrollText },
   { label: "Theme", icon: Sun, onClick: () => {} },
+  { label: "Language", icon: LanguagesIcon, onClick: () => {} },
 ];
 
 interface MobileLinkButtonProps {

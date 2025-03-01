@@ -30,6 +30,9 @@ export const Footer: React.FC = () => {
           </ul>
         </nav>
       </Container>
+
+      <div className={"h-16 md:h-0"} />
+
     </footer>
   );
 };

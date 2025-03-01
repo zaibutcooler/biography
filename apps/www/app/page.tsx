@@ -14,23 +14,28 @@ export default function Page() {
         <article className="max-w-xl space-y-6">
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-[3rem] sm:leading-[3.5rem]">
             Building The Future With Technology
+            {/*技術の 力で より良い未来を 築いています*/}
           </h1>
           <p className="max-w-lg text-base">
             I believe technology should serve humanity. My goal is to create
             products that make a difference and bring good things to the world.
+
+            {/*テクノロジーが人々のために役立つものであるべきだと信じています。世界に良い変化をもたらす製品を作ることが私の使命です。*/}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center sm:justify-start">
             <Link
               href={siteConfig.aboutUrl}
               className={buttonVariants({ size: "lg" })}
             >
-              Get Started
+              About Me
+              {/*私について*/}
             </Link>
             <Link
               href={siteConfig.contactUrl}
               className={buttonVariants({ size: "lg", variant: "ghost" })}
             >
               Contact Now
+              {/*お問い合わせ*/}
             </Link>
           </div>
         </article>

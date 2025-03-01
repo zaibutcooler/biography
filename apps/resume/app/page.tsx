@@ -131,9 +131,9 @@ export default function Page() {
                 <CardHeader>
                   <div className="space-y-1">
                     <CardTitle className="text-base">
-                      {project.link ? (
+                      {project.links[0] ? (
                         <a
-                          href={project.link.href}
+                          href={project.links[0].href}
                           target="_blank"
                           className="inline-flex items-center gap-1 hover:underline"
                         >
@@ -145,10 +145,10 @@ export default function Page() {
                       )}
                     </CardTitle>
                     <div className="hidden font-mono text-xs underline print:visible">
-                      {project.link?.href
+                      {project.links[0] ? (project.links[0]).href
                         .replace("https://", "")
                         .replace("www.", "")
-                        .replace("/", "")}
+                        .replace("/", "") : null}
                     </div>
                     <CardDescription className="font-mono text-xs">
                       {project.description}

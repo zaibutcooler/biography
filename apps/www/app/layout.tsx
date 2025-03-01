@@ -7,7 +7,7 @@ import { PropsWithChildren } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sai Ye Yint Aung | Zai",
+  title: "Zai | Sai Ye Yint Aung",
   description:
     "Sai Ye Yint Aung (Zai) is a passionate entrepreneur and software engineer from Myanmar, building innovative tech solutions and sharing insights on web development, AI, and startups.",
   keywords: [
