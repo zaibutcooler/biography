@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/"],
       },
     ],
-    sitemap: `${siteConfig.productionUrl}/sitemap.xml`,
+    sitemap: `${siteConfig.resumeUrl}/sitemap.xml`,
   };
 }

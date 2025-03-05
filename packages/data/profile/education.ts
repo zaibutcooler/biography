@@ -1,11 +1,5 @@
 const education = [
   {
-    school: 'Deep Learning Specialization',
-    degree: 'Career Certificate from Stanford',
-    start: '2025',
-    end: 'Today'
-  },
-  {
     school: 'University of People (California)',
     degree: 'B.E. Computer Science',
     start: '2022',

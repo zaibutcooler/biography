@@ -68,7 +68,7 @@ const MobileLinkButton: React.FC<MobileLinkButtonProps> = ({
 
 export const MobileNav: React.FC = () => {
   return (
-    <nav className="fixed bottom-0 left-0 z-40 block h-16 w-full border-t md:hidden bg-background">
+    <nav className="fixed bottom-0 left-0 z-40 block h-16 w-full md:hidden bg-background">
       <Container className="flex items-center justify-between h-full">
         <Logo />
         <Drawer>

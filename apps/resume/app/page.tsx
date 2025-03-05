@@ -16,6 +16,7 @@ import {
 import { Menu } from "~/components/menu";
 import { GlobeIcon, MailIcon } from "lucide-react";
 import { Section } from "~/components/section";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -24,26 +25,26 @@ export default function Page() {
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
-            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
+            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground pb-2">
               {RESUME_DATA.about}
             </p>
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
-              <a
+              <Link
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
                 href={RESUME_DATA.locationLink}
                 target="_blank"
               >
                 <GlobeIcon className="h-3 w-3" />
                 {RESUME_DATA.location}
-              </a>
+              </Link>
             </p>
-            <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
+            <div className="flex gap-x-1.5 pt-1 font-mono text-sm text-muted-foreground print:hidden">
               {RESUME_DATA.contact.email ? (
-                <a href={`mailto:${RESUME_DATA.contact.email}`}>
+                <Link href={`mailto:${RESUME_DATA.contact.email}`}>
                   <Button className="h-8 w-8" variant="outline" size="icon">
                     <MailIcon className="h-4 w-4" />
                   </Button>
-                </a>
+                </Link>
               ) : null}
 
               {RESUME_DATA.contact.social.map((social) => (
@@ -53,17 +54,17 @@ export default function Page() {
                   variant="outline"
                   size="icon"
                 >
-                  <a href={social.url}>
+                  <Link href={social.url}>
                     <social.icon className="h-4 w-4" />
-                  </a>
+                  </Link>
                 </Button>
               ))}
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (
-                <a href={`mailto:${RESUME_DATA.contact.email}`}>
+                <Link href={`mailto:${RESUME_DATA.contact.email}`}>
                   <span className="underline">{RESUME_DATA.contact.email}</span>
-                </a>
+                </Link>
               ) : null}
             </div>
           </div>
@@ -83,13 +84,13 @@ export default function Page() {
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.works.map((work) => {
             return (
-              <Card key={work.company}>
+              <Card key={work.company} className={"border border-muted"}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
+                      <Link className="hover:underline" href={work.link}>
                         {work.company}
-                      </a>
+                      </Link>
 
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
@@ -132,14 +133,14 @@ export default function Page() {
                   <div className="space-y-1">
                     <CardTitle className="text-base">
                       {project.links[0] ? (
-                        <a
+                        <Link
                           href={project.links[0].href}
                           target="_blank"
                           className="inline-flex items-center gap-1 hover:underline"
                         >
                           {project.title}{" "}
                           <span className="h-1 w-1 rounded-full bg-green-500"></span>
-                        </a>
+                        </Link>
                       ) : (
                         project.title
                       )}
@@ -185,14 +186,14 @@ export default function Page() {
                   <div className="space-y-1">
                     <CardTitle className="text-base">
                       {project.link ? (
-                        <a
+                        <Link
                           href={project.link.href}
                           target="_blank"
                           className="inline-flex items-center gap-1 hover:underline"
                         >
                           {project.title}{" "}
                           <span className="h-1 w-1 rounded-full bg-green-500"></span>
-                        </a>
+                        </Link>
                       ) : (
                         project.title
                       )}
@@ -250,7 +251,7 @@ export default function Page() {
           <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
+              return <Badge className={"bg-foreground text-background"} key={skill}>{skill}</Badge>;
             })}
           </div>
         </Section>

@@ -1,14 +1,13 @@
 const skills = [
-  "Python",
   "Pytorch",
   "TensorFlow",
-  "Django",
-  "FastAPI",
-  "TypeScript",
   "NextJs",
   "NodeJs",
+  "Ruby on Rails",
+  "Laravel",
   "ReactJs",
-  "Express",
+  "TypeScript",
+  "Express.js",
   "SvelteKit",
 ];
 

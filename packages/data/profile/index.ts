@@ -3,9 +3,9 @@ const profile = {
   nickName: "Zai",
   location: "Taunggyi",
   locationLink: "https://www.google.com/maps/place/Taunggyi",
-  about: "",
-  summary: "",
-  avatar: "https://avatars.githubusercontent.com/u/47269252",
+  about: "Turning ideas into products",
+  summary: "I am a software engineer who loves to build scalable web and cloud solutions. I am also a co-founder of a startup that creates floorplans with diffusion models, co-founder of BMC (Burmese Machine Learning Community), and a lead contributor of a non-profit education startup (StudyCrew).",
+  avatar: "",
   website: "https://zaibutcooler.vercel.app",
   email: "zaibutcooler@icloud.com",
   urls: {

@@ -26,13 +26,13 @@ const clients: Clients[] = [
     logo: "",
   },
   {
-    title: "Martin",
+    title: "Aspora",
     techStack: ["next.js", "postgresql"],
     description:
       "Worked for a project named Aspora where we reverse the process of recruitment and job-seeking.",
     link: {
-      label: "#",
-      href: "#",
+      label: "aspora.io",
+      href: "https://app.aspora.io",
     },
     pin: false,
     resume: true,
