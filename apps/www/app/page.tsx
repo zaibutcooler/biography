@@ -41,7 +41,7 @@ export default function Page() {
         </article>
 
         <figure className="relative h-[300px] w-[300px] sm:h-[424px] sm:w-[424px] rounded-lg overflow-hidden bg-primary">
-          {/*<Image src={"/me.jpeg"} alt={"Zai"} layout={"fill"} objectFit={"cover"} />*/}
+          {/*<Image app={"/me.jpeg"} alt={"Zai"} layout={"fill"} objectFit={"cover"} />*/}
         </figure>
       </Container>
       <Footer />
