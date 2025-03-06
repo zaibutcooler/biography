@@ -4,7 +4,7 @@ import {PropsWithChildren} from "react"
 import {mono} from "~/lib/fonts";
 
 export const metadata: Metadata = {
-  title: "Sai Ye Yint Aung",
+  title: "About Zai",
   description:
     "Sai Ye Yint Aung (Zai) is a passionate entrepreneur and software engineer from Myanmar, building innovative tech solutions and sharing insights on web development, AI, and startups.",
   keywords: [

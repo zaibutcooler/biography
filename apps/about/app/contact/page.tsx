@@ -2,7 +2,7 @@ import {ContactForm} from "~/components/contact-form";
 import {Metadata} from "next";
 
 export const metadata:Metadata = {
-   title: "Contact"
+   title: "Contact",
 }
 
 export default function Page(){

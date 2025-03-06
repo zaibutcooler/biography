@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { z } from "zod";
 import { Form, FormField, FormItem } from "@repo/ui/components/ui/form";
