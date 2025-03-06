@@ -13,32 +13,6 @@ export interface Clients {
 
 const clients: Clients[] = [
   {
-    title: "Kanbawza Education",
-    techStack: ["python", "pytorch"],
-    description:
-      "Lectured more than 100 kids in my local region for 1 month by teaching them basic python and machine learning",
-    link: {
-      label: "#",
-      href: "#",
-    },
-    pin: false,
-    resume: true,
-    logo: "",
-  },
-  {
-    title: "Shopdora",
-    techStack: ["pytorch", "aws", "django"],
-    description:
-      "Worked for a product recommendation algorithm for a local business owner who is trying to go online. ",
-    link: {
-      label: "#",
-      href: "#",
-    },
-    pin: false,
-    resume: true,
-    logo: "",
-  },
-  {
     title: "Greenlight",
     techStack: ["full-stack", "erb", "pwa"],
     description:
@@ -52,13 +26,13 @@ const clients: Clients[] = [
     logo: "",
   },
   {
-    title: "Martin",
+    title: "Aspora",
     techStack: ["next.js", "postgresql"],
     description:
       "Worked for a project named Aspora where we reverse the process of recruitment and job-seeking.",
     link: {
-      label: "#",
-      href: "#",
+      label: "aspora.io",
+      href: "https://app.aspora.io",
     },
     pin: false,
     resume: true,
@@ -95,19 +69,6 @@ const clients: Clients[] = [
     techStack: ["tauri", "react"],
     description:
       "Made a basic desktop app to manage supply chain and employee(labour) data.",
-    link: {
-      label: "#",
-      href: "#",
-    },
-    pin: false,
-    resume: true,
-    logo: "",
-  },
-  {
-    title: "Jinja Express",
-    techStack: ["next.js", "pwa", "express.js"],
-    description:
-      "Migrated the Admin Panel (Frontend) from React.js To Next.js using best practices.",
     link: {
       label: "#",
       href: "#",
