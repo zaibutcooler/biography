@@ -3,18 +3,21 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3001",
+    "dev": "next dev --port 5174",
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
+    "@hookform/resolvers": "^4.1.0",
     "@repo/data": "workspace:*",
+    "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
     "next": "14.2.8",
     "react": "catalog:react18",
-    "react-dom": "catalog:react18"
+    "react-dom": "catalog:react18",
+    "react-hook-form": "^7.54.2",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "14.2.8",

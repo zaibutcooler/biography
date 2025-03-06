@@ -1,7 +1,13 @@
+import {Hero} from "~/components/hero";
+import {Summary} from "~/components/summary";
+import {History} from "~/components/history";
+
 export default function Page() {
   return (
     <main>
-      <h1>This is the about page</h1>
+      <Hero />
+      <Summary />
+      <History/>
     </main>
   );
 }

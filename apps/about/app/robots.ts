@@ -1,5 +1,6 @@
 // to setup robots
 import type { MetadataRoute } from "next";
+import {siteConfig} from "@repo/data/site"
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -13,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/"],
       },
     ],
-    sitemap: `https://zaibutcooler.vercel.app/sitemap.xml`,
+    sitemap: `${siteConfig.aboutUrl}/sitemap.xml`,
   };
 }
