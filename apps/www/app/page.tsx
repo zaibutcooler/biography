@@ -8,7 +8,7 @@ import { siteConfig } from "@repo/data/site";
 
 export default function Page() {
   return (
-    <main className="font-mono">
+    <main>
       <Navbar />
       <Container className="flex flex-col sm:flex-row justify-between items-center mt-24 sm:mt-48 mb-24 sm:mb-48 gap-12 text-center sm:text-left">
         <article className="max-w-xl space-y-6">

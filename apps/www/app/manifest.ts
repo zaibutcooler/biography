@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { metadata } from "~/app/layout";
 import profile from "@repo/data/profile"
+import { colors } from "@repo/ui/lib/colors"
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
@@ -9,8 +10,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: metadata.description as string,
     start_url: '/',
     display: 'standalone',
-    background_color: '#fff',
-    theme_color: '#fff',
+    background_color: colors.light.background,
+    theme_color: colors.light.primary,
     icons: [
       {
         src: '/favicon.ico',
