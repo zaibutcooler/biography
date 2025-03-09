@@ -22,8 +22,6 @@ export const metadata: Metadata = {
     "React",
     "TypeScript",
     "JavaScript",
-    "Mobile Development",
-    "Flutter",
     "Web Development",
     "Tech Blog",
     "Portfolio",

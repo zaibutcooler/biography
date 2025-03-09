@@ -1,10 +1,11 @@
 import "@repo/ui/globals.css";
 import type { Metadata } from "next";
-import {PropsWithChildren} from "react"
-import {mono} from "~/lib/fonts";
+import { PropsWithChildren } from "react";
+import { mono } from "~/lib/fonts";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "About Zai",
+  title: "Sai Ye Yint Aung",
   description:
     "Sai Ye Yint Aung (Zai) is a passionate entrepreneur and software engineer from Myanmar, building innovative tech solutions and sharing insights on web development, AI, and startups.",
   keywords: [
@@ -30,15 +31,12 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({
-  children,
-}: PropsWithChildren) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={mono.className}>
-        <div className={"mx-auto max-w-7xl px-5"}>
-          {children}
-        </div>
+        {children}
+        <Analytics />
       </body>
     </html>
   );

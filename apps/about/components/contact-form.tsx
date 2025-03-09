@@ -7,21 +7,23 @@ import { useForm, } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@repo/ui/components/ui/input";
 import { Button } from "@repo/ui/components/ui/button";
+import {notifyAndSave} from "~/app/contact/actions";
 
 const schema = z.object({
   email: z.string().email(),
   content: z.string().min(10),
 });
 
-type FormType = z.infer<typeof schema>;
+export type ContactFormType = z.infer<typeof schema>;
 
 export const ContactForm: React.FC = () => {
-  const form = useForm<FormType>({
+  const form = useForm<ContactFormType>({
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = async (data: FormType) => {
+  const onSubmit = async (data: ContactFormType) => {
     try {
+      const response = await notifyAndSave(data);
 
     }catch (e){
       console.log("ERROR ",e)
