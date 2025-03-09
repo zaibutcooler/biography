@@ -1,15 +1,15 @@
 import "@repo/ui/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import { PropsWithChildren } from "react";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 
-const inter = Inter({ subsets: ["latin"] });
+const mono = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zai | Sai Ye Yint Aung",
+  title: "Zai",
   description:
-    "Sai Ye Yint Aung (Zai) is a passionate entrepreneur and software engineer from Myanmar, building innovative tech solutions and sharing insights on web development, AI, and startups.",
+    "Join Zai on a journey through technology, innovation, and open-source contributions.",
   keywords: [
     "Zai",
     "Sai Ye Yint Aung",
@@ -22,8 +22,6 @@ export const metadata: Metadata = {
     "React",
     "TypeScript",
     "JavaScript",
-    "Mobile Development",
-    "Flutter",
     "Web Development",
     "Tech Blog",
     "Portfolio",
@@ -39,7 +37,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={mono.className}>
         {children}
         <Analytics />
       </body>
